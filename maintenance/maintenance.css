@@ -59,8 +59,9 @@ border: medium #414141 solid;
 }
 
 
-.remain .remainbox .remainboxressources ui {
-	 
+.remain .remainbox .remainboxressources li:nth-child(1){
+	 border: solid 1px #F50004;
+	
    
 }
 
@@ -69,7 +70,22 @@ border: medium #414141 solid;
 	border: thick #000000 solid;
 }
 
+.car {
+    font-family     : Arial;
+    text-align      : center;
+    width           : 100px;
+    height          : 15px;
+    background      : #ccc;
+    border          : 1px solid #000;
+    box-shadow      : 1px 1px 5px -1px #000;
+    padding         : 10px;
+    margin-bottom   : 10px;
+    cursor          : pointer;
+}
 
+.car:hover {
+    text-decoration : underline;   
+}
 
 
 
