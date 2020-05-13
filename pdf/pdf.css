@@ -1,0 +1,58 @@
+.grid-container-striber {
+  display: grid;
+  grid-gap: 10px;
+  background-color: blue;
+  border: 2px solid red;
+
+}
+
+.grid-itemstrib{
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1striber {
+  grid-column: 1 / span 3;
+    grid-row: 1;
+    color: red;
+}
+
+
+.item2striber {
+  grid-column: 1;
+    grid-row: 2/6;
+    border: 5px solid black;
+}
+
+.item3striber {
+  grid-column: 2;
+  grid-row: 2;
+  display: block;
+Border: 2px solid yellow;
+}
+
+.item4striber {
+  grid-column: 3;
+  grid-row: 2/6;
+  border: 2px solid black;
+
+}
+
+
+.item5striber {
+  grid-column: 1 / span 2;
+   grid-row: 4;
+}
+
+.item6striber {
+  grid-column: 1 / span 2;
+  grid-row: 5;
+}
+
+
+.item7striber{
+  grid-column: 1 / span 2;
+  grid-row: 6;
+
+}
