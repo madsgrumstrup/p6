@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-.grid-container-history {
+.grid-container-history{
   display: grid;
   grid-template-columns: auto;
 }
 
-.grid-item-history {
+.grid-item-history{
   background-color: #000000;
   padding-left: 5px;
   padding-top: 20px;
@@ -45,4 +45,12 @@ li a{
 
 li a:hover{
   color: #25b125;
+}
+
+#navbox{
+  float: right;
+}
+
+.fas fa-user{
+  padding-right: 5px;
 }
