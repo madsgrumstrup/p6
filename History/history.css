@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-.grid-container-history{
+.overallnav{
   display: grid;
   grid-template-columns: auto;
 }
 
-.grid-item-history{
+.overallnavitems{
   background-color: #000000;
   padding-left: 5px;
   padding-top: 20px;
@@ -22,19 +22,19 @@
   margin-top: 2px;
 }
 
-ul{
+.overallnav .overallnavitems ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li{
+.overallnav .overallnavitems li{
   float: left;
   margin-left: 20px;
 }
 
-li a{
+.overallnav .overallnavitems li a{
   display: block;
   color: #FFFFFF;
   text-align: center;
@@ -43,10 +43,70 @@ li a{
   font-weight: bold;
 }
 
-li a:hover{
+.overallnav .overallnavitems li a:hover{
   color: #25b125;
 }
 
 #navbox{
   float: right;
+}
+
+.remain .residenav ul{
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.remain .residenav li{
+  margin-left: 20px;
+}
+
+.remain .residenav li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remain .residenav li a:hover{
+  color: #25b125;
+}
+
+.remain .residenav p{
+  font-size: 15px;
+}
+
+.remain .residenav li p{
+  font-size: 12px;
+}
+
+.remain{
+	display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
+  grid-area: remain;
+	border: thick #000000 solid;
+}
+
+.remain .residenav{
+	grid-area: residenav;
+	border: medium #414141 solid;
+  background-color: #000000;
+}
+
+.remain .remainbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
+  grid-area: remainbox;
+  border: medium #414141 solid;
+}
+
+.remainboxtop{
+	grid-area: remainboxtop;
 }
