@@ -54,7 +54,7 @@ li a:hover{
 }
 
 /* Her slutter menu css */
-
+/* Her starter settings css */
 .setcontainer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -71,9 +71,10 @@ li a:hover{
 .set_item1 p{
   grid-column: 1 / -1;
   text-align: center;
+  font-size: 30px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: bold;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
   margin-bottom: 7px;
 }
 
@@ -81,21 +82,30 @@ li a:hover{
   margin-top: auto;
   grid-column: 2;
   grid-row: 1;
+  font-family: 'Titillium Web', sans-serif;
+}
 
+#fname{
+color: #6B6C6B;
+font-family: 'Titillium Web', sans-serif;
 }
 
 .set_item3{
   margin-top: auto;
   grid-column: 3;
   grid-row: 1;
+  font-family: 'Titillium Web', sans-serif;
 }
+
 .set_item4{
   margin-top: auto;
   grid-column: 4;
   grid-row: 1;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .scrool{
+  grid-column: 1/-1;
 	width: 100%;
 }
 
@@ -106,16 +116,14 @@ li a:hover{
   margin-left: auto;
 }
 
-i {
+.arrowDown {
+  margin-top: 360px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
-
-}
-
-.arrowDown {
+  padding: 10px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-	margin-left: 50%;
+  margin-left: 50%;
+  opacity:.5;
 }
