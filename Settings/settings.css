@@ -59,7 +59,16 @@ li a:hover{
 
 }
 
-.set_item1{
+.set_item1 {
+  grid-column: 1 /-1;
+  grid-row: 1;
+}
+
+.set_item1 p{
   grid-column: 1 / span 4;
-    grid-row: 2;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  margin-bottom: 2px;
 }
