@@ -2,9 +2,76 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/1f805a81df.js" crossorigin="anonymous"></script>
 <title>Settings</title>
+<link rel="stylesheet" href="settings.css">
 </head>
-
+<header>
+  <div class="overallnav">
+    <div class="overallnavitems">
+      <img id="headerlogo" src="../Images/trendloglogo.png" alt="Trendlogs logo til navigationsbaren">
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#">Trendboards</a></li>
+        <li><a href="#">Views</a></li>
+        <li><a href="#">Feeds</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li style="float:right; margin-right: 10px;"><a href="#"><i class="fas fa-user"></i></a></li>
+        <li style="float:right;"><a href="#">User</a></li>
+        <li style="float:right"><a href="#"><select id="navbox" name="pluglog">
+          <option value="pluglog" disabled selected>20 Plug&Log Production Unit</option></select>
+        </a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-bell"></i></a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-user-plus"></i></a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-cogs"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
 <body>
+<div class="remain">
+  <div class="residenav">
+    <ul><p>Maintenance</p>
+    <li><a href="maintenanceindex.html">Resources</a></li>
+    <li><a href="settings.html">Settings</a><ul>
+      <li><p>Maskine 1????</p></li>
+    </ul></li>
+    <li><a href="history.html">History</a><ul>
+      <li><p>Maskine 1????</p></li>
+    </ul></li>
+    </ul>
+  </div>
+  <div class="remainbox">
+    <div class="setcontainer">
+      <div class="set_item1"><p>Settings</p></div>
+      <div class="set_item2">Name of resource<br><input type="text" id="fname" value="e.g Big Crane.."name="fname"><br><br>
+        </div>
+      <div class="set_item3">Type<br><input type="text" id="fname" value=""name="fname"><br><br>
+        </div>
+      <div class="set_item4">Group<br><input type="text" id="fname" value=""name="fname"><br><br>
+      </div>
+      <div class="scrool">
+          <a href="#" id="tocontent"></a>
+          <i class="arrowDown"></i>
+          <div class="set_item1"><p>Settings</p></div>
+          <div class="set_item2">Name of resource<br><input type="text" id="fname" value="e.g Big Crane.."name="fname"><br><br>
+            </div>
+          <div class="set_item3">Type<br><input type="text" id="fname" value=""name="fname"><br><br>
+            </div>
+          <div class="set_item4">Group<br><input type="text" id="fname" value=""name="fname"><br><br>
+          </div>
+          <div class="scrool">
+              <a href="#" id="tocontent"></a>
+              <i class="arrowDown"></i>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
