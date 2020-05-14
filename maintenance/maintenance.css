@@ -27,6 +27,7 @@
 
 
 .remain .residenav {
+	
 	grid-area: residenav;
 	border: medium #414141 solid;
 }
