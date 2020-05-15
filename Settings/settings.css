@@ -219,6 +219,22 @@
 }
 
 /* Anden del slutter */
+/* Tredje del starter */
+.set_item9{
+  grid-column: 1 /-1;
+}
+.set_item9 p{
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 7px;
+}
+
+/* Tredje del slutter */
+/* Alle scrool pile her */
 .scrool {
   grid-column: 1/-1;
   width: 100%;
@@ -251,6 +267,18 @@
   padding: 10px;
   transform: rotate(45deg);
   -webkit-transform: rotate(225deg);
+  margin-left: 50%;
+  opacity: .5;
+}
+
+.arrowDown3 {
+  margin-top: 240px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   margin-left: 50%;
   opacity: .5;
 }
