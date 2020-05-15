@@ -112,10 +112,10 @@
 .setcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10em 3em 1fr;
+  grid-template-rows: 10em 3em 1fr 1fr 1fr;
   border: 2px solid red;
 }
-
+ /* Forste del starter */
 .set_item1 {
   grid-column: 1 /-1;
   grid-row: 1;
@@ -157,6 +157,47 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+/* Første del slutter */
+/* Anden del starter */
+.set_item5 {
+  grid-column: 1 /-1;
+  grid-row: 2;
+  margin-top: 400px;
+}
+
+.set_item5 p {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 7px;
+}
+
+
+.set_item6 {
+  margin-top: 500px;
+  grid-column: 2;
+  grid-row: 2;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.set_item7 {
+  margin-top: 500px;
+  grid-column: 3;
+  grid-row: 2;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.set_item8 {
+  margin-top: 500px;
+  grid-column: 4;
+  grid-row: 2;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* Anden del slutter */
 .scrool {
   grid-column: 1/-1;
   width: 100%;
@@ -170,7 +211,7 @@
 }
 
 .arrowDown1 {
-  margin-top: 360px;
+  margin-top: 300px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -182,7 +223,7 @@
 }
 
 .arrowDown2 {
-  margin-top: 400px;
+  margin-top: 100px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
