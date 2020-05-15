@@ -183,6 +183,13 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+#description{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 200px;
+}
+
 .set_item7 {
   margin-top: 500px;
   grid-column: 3;
@@ -190,11 +197,25 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+#documents{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 200px;
+}
+
 .set_item8 {
   margin-top: 500px;
   grid-column: 4;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
+}
+
+#checkbox{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 200px;
 }
 
 /* Anden del slutter */
