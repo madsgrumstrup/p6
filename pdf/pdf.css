@@ -122,42 +122,6 @@ margin-bottom: 15px;
 
 /*skill baren */
 
-.skillbar{
-  font-family: 'Titillium Web', sans-serif;
-  list-style: none;
-  width: 300px;
-  float: left;
-  margin-top: -60px;
-
-}
-
-.skillbar p{
-  font-size: 20px;
-}
-
-.skillbar li{
-  margin: 20px 0;
-}
-
-.bar{
-  background-color: #ffffff;
-  display: block;
-  height: 25px;
-  border: 2px solid black;
-  border-radius: 3px;
-  overflow: hidden;
-
-}
-
-.bar span{
-  height: 25px;
-  float: left;
-  background: #25b125;
-}
-
-.description{
-  width: 50%;
-}
 
 
 .itempdf77{
@@ -172,6 +136,26 @@ margin-bottom: 15px;
   border: 2px solid pink;
 }
 
+.itempdf8 p{
+  font-size: 20px;
+}
+
+#description1{
+  text-align: center;
+}
+ #bar1{
+   width: 50%;
+   height: 30%;
+   background-color: #4caf50;
+   text-align: center;
+   line-height: 30px;
+   color: #fff;
+ }
+
+.button-container{
+  
+}
+
 .itempdf88{
   grid-column: 3;
   grid-row: 7;
@@ -182,6 +166,16 @@ margin-bottom: 15px;
   grid-column: 2;
   grid-row: 8;
   border: 2px solid pink;
+
+}
+
+#comment{
+  height: 40px;
+  width: 350px;
+}
+
+.itempdf9 p{
+  font-size: 20px;
 }
 
 .itempdf99{
