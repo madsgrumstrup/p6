@@ -1,14 +1,13 @@
 @charset "utf-8";
+
 /* CSS Document */
-
 /* Her starter menu css */
-
-.overallnav{
+.overallnav {
   display: grid;
   grid-template-columns: auto;
 }
 
-.overallnavitems{
+.overallnavitems {
   background-color: #000000;
   padding-left: 5px;
   padding-top: 20px;
@@ -17,26 +16,26 @@
   text-align: center;
 }
 
-#headerlogo{
+#headerlogo {
   width: 150px;
   height: 20px;
   float: left;
   margin-top: 2px;
 }
 
-.overallnav .overallnavitems ul{
+.overallnav .overallnavitems ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.overallnav .overallnavitems li{
+.overallnav .overallnavitems li {
   float: left;
   margin-left: 20px;
 }
 
-.overallnav .overallnavitems li a{
+.overallnav .overallnavitems li a {
   display: block;
   color: #FFFFFF;
   text-align: center;
@@ -45,15 +44,15 @@
   font-weight: bold;
 }
 
-.overallnav .overallnavitems li a:hover{
+.overallnav .overallnavitems li a:hover {
   color: #25b125;
 }
 
-#navbox{
+#navbox {
   float: right;
 }
 
-.remain .residenav ul{
+.remain .residenav ul {
   list-style-type: none;
   margin: 20px;
   padding: 0;
@@ -62,44 +61,44 @@
   font-size: 12px;
 }
 
-.remain .residenav li{
+.remain .residenav li {
   margin-left: 20px;
 }
 
-.remain .residenav li a{
+.remain .residenav li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.remain .residenav li a:hover{
+.remain .residenav li a:hover {
   color: #25b125;
 }
 
-.remain .residenav p{
+.remain .residenav p {
   font-size: 15px;
 }
 
-.remain .residenav li p{
+.remain .residenav li p {
   font-size: 12px;
 }
 
-.remain{
-	display: grid;
+.remain {
+  display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
+  grid-template-areas: "residenav remainbox remainbox""residenav remainbox remainbox";
   grid-area: remain;
-	border: thick #000000 solid;
+  border: thick #000000 solid;
 }
 
-.remain .residenav{
-	grid-area: residenav;
-	border: medium #414141 solid;
+.remain .residenav {
+  grid-area: residenav;
+  border: medium #414141 solid;
   background-color: #000000;
 }
 
-.remain .remainbox{
+.remain .remainbox {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
@@ -108,15 +107,13 @@
   border: medium #414141 solid;
 }
 
-
 /* Her slutter menu css */
 /* Her starter settings css */
-.setcontainer{
+.setcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 10em 3em 1fr;
   border: 2px solid red;
-
 }
 
 .set_item1 {
@@ -124,7 +121,7 @@
   grid-row: 1;
 }
 
-.set_item1 p{
+.set_item1 p {
   grid-column: 1 / -1;
   text-align: center;
   font-size: 30px;
@@ -134,45 +131,45 @@
   margin-bottom: 7px;
 }
 
-.set_item2{
+.set_item2 {
   margin-top: auto;
   grid-column: 2;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
 
-#fname{
-color: #6B6C6B;
-font-family: 'Titillium Web', sans-serif;
+#fname {
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-.set_item3{
+.set_item3 {
   margin-top: auto;
   grid-column: 3;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
 
-.set_item4{
+.set_item4 {
   margin-top: auto;
   grid-column: 4;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
 
-.scrool{
+.scrool {
   grid-column: 1/-1;
-	width: 100%;
+  width: 100%;
 }
 
-#tocontent{
+#tocontent {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
 }
 
-.arrowDown {
+.arrowDown1 {
   margin-top: 360px;
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -181,5 +178,17 @@ font-family: 'Titillium Web', sans-serif;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-left: 50%;
-  opacity:.5;
+  opacity: .5;
+}
+
+.arrowDown2 {
+  margin-top: 400px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(225deg);
+  margin-left: 50%;
+  opacity: .5;
 }
