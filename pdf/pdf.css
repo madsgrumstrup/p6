@@ -152,9 +152,42 @@ margin-bottom: 15px;
    color: #fff;
  }
 
-.button-container{
-  
+.container-btn{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
+
+.switch{
+  width: 110px;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch input {display:none}
+
+.slider:before{
+position: absolute;
+content:"";
+height: 50px;
+width:
+}
+
+
+
 
 .itempdf88{
   grid-column: 3;
