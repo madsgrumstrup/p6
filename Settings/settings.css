@@ -134,7 +134,7 @@
 
 .set_item2 {
   margin-top: 200px;
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -146,14 +146,14 @@
 
 .set_item3 {
   margin-top: 200px;
-  grid-column: 3;
+  grid-column: 4;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
 
 .set_item4 {
   margin-top: 200px;
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -178,7 +178,7 @@
 
 .set_item6 {
   margin-top: 500px;
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -192,7 +192,7 @@
 
 .set_item7 {
   margin-top: 500px;
-  grid-column: 3;
+  grid-column: 4;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -206,7 +206,7 @@
 
 .set_item8 {
   margin-top: 500px;
-  grid-column: 4;
+  grid-column: 5;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -291,6 +291,36 @@
 }
 
 /* Tredje del slutter */
+/* Her starter 4 del */
+.set_item14 {
+  grid-column: 1 /-1;
+}
+
+.set_item14 p {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 7px;
+}
+
+.set_item15 {
+  margin-top: 1900px;
+  grid-column: 3/4;
+  grid-row: 2;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#to_email {
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 50px;
+}
+
+/* Her slutter 4 del */
 /* Alle scrool pile her */
 .scrool {
   grid-column: 1/-1;
@@ -336,6 +366,41 @@
   padding: 10px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  margin-left: 50%;
+  opacity: .5;
+}
+
+.arrowDown4 {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(225deg);
+  margin-left: 50%;
+  opacity: .5;
+}
+
+.arrowDown5 {
+  margin-bottom: 30px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 50%;
+  opacity: .5;
+}
+
+.arrowDown6 {
+  margin-top: 30px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(225deg);
   margin-left: 50%;
   opacity: .5;
 }
