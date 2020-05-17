@@ -111,8 +111,8 @@
 /* Her starter settings css */
 .setcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10em 3em 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10em 3em 1fr 1fr 1fr 1fr 1fr;
   border: 2px solid red;
 }
 
@@ -235,7 +235,7 @@
 }
 
 .set_item10 {
-  margin-top: 500px;
+  margin-top: 1200px;
   grid-column: 2;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
@@ -249,7 +249,7 @@
 }
 
 .set_item11 {
-  margin-top: 500px;
+  margin-top: 1200px;
   grid-column: 3;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
@@ -258,13 +258,13 @@
 #service_interval_number {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
-  width: 250px;
-  height: 200px;
+  width: 100px;
+  height: 50px;
 }
 
 .set_item12 {
-  margin-top: 500px;
-  grid-column: 3;
+  margin-top: 1200px;
+  grid-column: 4;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -272,13 +272,13 @@
 #service_interval_style {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
-  width: 250px;
-  height: 200px;
+  width: 100px;
+  height: 50px;
 }
 
 .set_item13 {
-  margin-top: 500px;
-  grid-column: 4;
+  margin-top: 1200px;
+  grid-column: 5;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
 }
