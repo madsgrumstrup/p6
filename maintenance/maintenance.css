@@ -54,16 +54,31 @@ border: medium #414141 solid;
 	border: thin #BDBDBD solid;
 	align-items:center;
 	text-align: start;
-	columns: 3;
+	
+	  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 	
 	
 }
 
 
-.remain .remainbox .remainboxressources li:nth-child(1){
-	 border: solid 1px #F50004;
+
+
+.remain .remainbox .remainboxressources .reitem {
 	
-   
+	color: red;
+	
+	padding-bottom: 20%;
+	padding-left: 30%;
+	border: thick #000000 solid; 
+	height: 50%;
+}
+
+.remain .remainbox .remainboxressources #reitem1date {
+	color: blue;
 }
 
 .footer {
