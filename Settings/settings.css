@@ -133,7 +133,7 @@
 }
 
 .set_item2 {
-  margin-top: auto;
+  margin-top: 200px;
   grid-column: 2;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
@@ -145,14 +145,14 @@
 }
 
 .set_item3 {
-  margin-top: auto;
+  margin-top: 200px;
   grid-column: 3;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
 
 .set_item4 {
-  margin-top: auto;
+  margin-top: 200px;
   grid-column: 4;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
