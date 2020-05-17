@@ -307,8 +307,8 @@
 }
 
 .set_item15 {
-  margin-top: 1900px;
-  grid-column: 3/4;
+  margin-top: 100px;
+  grid-column: 4;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -332,6 +332,16 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
+}
+
+.save_set {
+  color: #ff0000;
+  
+}
+
+.save_set_buttom {
+  display: inline-block;
+  grid-column: 3;
 }
 
 .arrowDown1 {
