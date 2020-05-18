@@ -147,9 +147,25 @@
   margin-left: auto;
 }
 
-#fname {
+#name_of_resource {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
+
+#type {
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
+
+#group{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
 }
 
 .set_item3 {
@@ -244,6 +260,7 @@
   margin-bottom: 7px;
 }
 
+
 .set_item10 {
   margin-top: 1200px;
   grid-column: 2;
@@ -254,8 +271,8 @@
 #last_service {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 50px;
 }
 
 .set_item11 {
@@ -296,8 +313,8 @@
 #next_service {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 50px;
 }
 
 /* Tredje del slutter */
@@ -422,6 +439,7 @@
 }
 
 .arrowDown4 {
+  top: -250px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -430,10 +448,10 @@
   -webkit-transform: rotate(225deg);
   margin-left: 50%;
   opacity: .5;
+
 }
 
 .arrowDown5 {
-  margin-bottom: 30px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
