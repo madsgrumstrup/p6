@@ -47,24 +47,935 @@ border: medium #414141 solid;
 
 .remainboxtop { 
 	grid-area: remainboxtop; }
-
+/* resourcees*/
 
 .remain .remainbox .remainboxressources{
+	position: relative;
 	 grid-area: remainboxressources; 
 	border: thin #BDBDBD solid;
 	align-items:center;
 	text-align: start;
-	columns: 3;
+	
+	  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 	
 	
 }
 
 
-.remain .remainbox .remainboxressources li:nth-child(1){
-	 border: solid 1px #F50004;
+
+
+.remain .remainbox .remainboxressources .reitem {
 	
-   
+grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "reitem 1" "reiten1date";
+	color: red;
+	
+	padding-bottom: 20%;
+	
+	border: thick #000000 solid; 
+	height: 50%;
+	width: 90%;
 }
+
+/* resource 1 */
+.remain .remainbox .remainboxressources .reitem1nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitemname  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitemtype {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem1date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+/* resource 2 */
+
+.remain .remainbox .remainboxressources .reitem2nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem2name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem2type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem2date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate2 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress2 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress2 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+
+
+/* resource 3 */
+
+.remain .remainbox .remainboxressources .reitem3nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem3name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem3type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem3date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate3 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress3 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress3 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+
+
+/* resource 4 */
+
+.remain .remainbox .remainboxressources .reitem4nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem4name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem4type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem4date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate4 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress4 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress4 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+
+/* resource 5*/
+
+.remain .remainbox .remainboxressources .reitem5nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem5name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem5type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem5date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate5 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress5 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress5 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+
+
+/* resource 6*/
+
+.remain .remainbox .remainboxressources .reitem6nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem6name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem6type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem6date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate6 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress6 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress6 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+/* resource 7*/
+
+.remain .remainbox .remainboxressources .reitem7nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem7name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem7type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem7date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate7 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress7 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress7 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+/* resource 8*/
+
+.remain .remainbox .remainboxressources .reitem8nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem8name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem8type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem8date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate8{
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress8 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress8 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+/* resource 9*/
+
+.remain .remainbox .remainboxressources .reitem9nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem9name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem9type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem9date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate9 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress9 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress9 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+
+
+/* resource 10*/
+
+.remain .remainbox .remainboxressources .reitem10nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem10name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem10type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem10date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate10 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress10 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress10 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+/* resource 11*/
+
+.remain .remainbox .remainboxressources .reitem11nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem11name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem11type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem11date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate11 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress11 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress11 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+/* resource 12*/
+
+.remain .remainbox .remainboxressources .reitem12nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem12name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem12type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem12date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate12{
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress12 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress12 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+/* resource 13*/
+
+.remain .remainbox .remainboxressources .reitem13nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem13name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem13type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem13date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate13 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress13 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress13 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+/* resource 14*/
+
+.remain .remainbox .remainboxressources .reitem14nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem14name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem14type {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem14date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate14 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress14 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress14 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
+/* resource 15*/
+
+.remain .remainbox .remainboxressources .reitem15nt {
+	  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitem15name  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+}
+.remain .remainbox .remainboxressources .reitem15type{
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../Images/MACHINELOGO.png");
+	background-size:cover; 
+	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem15date {
+	border: thin #000000 solid; 
+	
+	
+	width:100%;
+	height: 85%;
+}
+
+#indidate15 {
+	display: none;
+	z-index: 0;
+}
+
+.remain .remainbox .remainboxressources .itemprogress15 {
+	grid-area: reiten1dat;
+color:#000000;
+	background-color: red;
+	width:100%;
+	height: 100%;
+	margin-top: -20px;
+	text-align: center;
+
+}
+
+.remain .remainbox .remainboxressources .itemprogress15 h2{
+ 
+	text-align:justify;
+	margin-left: 3.5em;
+	padding-top: 40px;
+}
+
+
+
+
 
 .footer {
 	grid-area: footer;
