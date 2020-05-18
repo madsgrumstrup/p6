@@ -5,8 +5,8 @@
 function dateprogress1() {
 	var prog = document.getElementById('itemprogress');
 	var percent = document.getElementById('indidate');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
@@ -22,10 +22,7 @@ function dateprogress1() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+
 	}
 }
 
@@ -33,12 +30,12 @@ function dateprogress1() {
 function dateprogress2() {
 	var prog = document.getElementById('itemprogress2');
 	var percent = document.getElementById('indidate2');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 225 && count == 45){
 			clearInterval(id);
 			
 		}
@@ -50,10 +47,7 @@ function dateprogress2() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+	
 	}
 }
 
@@ -61,12 +55,12 @@ function dateprogress2() {
 function dateprogress3() {
 	var prog = document.getElementById('itemprogress3');
 	var percent = document.getElementById('indidate3');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 200 && count == 40){
 			clearInterval(id);
 			
 		}
@@ -78,22 +72,19 @@ function dateprogress3() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+	
 	}
 }
 //RESSOURCE 4
 function dateprogress4() {
 	var prog = document.getElementById('itemprogress4');
 	var percent = document.getElementById('indidate4');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 200 && count == 40){
 			clearInterval(id);
 			
 		}
@@ -105,10 +96,7 @@ function dateprogress4() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+	
 	}
 }
 //RESSOURCE 5
@@ -116,12 +104,12 @@ function dateprogress4() {
 function dateprogress5() {
 	var prog = document.getElementById('itemprogress5');
 	var percent = document.getElementById('indidate5');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 175 && count == 35){
 			clearInterval(id);
 			
 		}
@@ -133,22 +121,19 @@ function dateprogress5() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+	
 	}
 }
 //RESSOURCE 6
 function dateprogress6() {
 	var prog = document.getElementById('itemprogress6');
 	var percent = document.getElementById('indidate6');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 150 && count == 30){
 			clearInterval(id);
 			
 		}
@@ -160,22 +145,20 @@ function dateprogress6() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+	
+		
 	}
 }
 //RESSOURCE 7
 function dateprogress7() {
 	var prog = document.getElementById('itemprogress7');
 	var percent = document.getElementById('indidate7');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 125 && count == 25){
 			clearInterval(id);
 			
 		}
@@ -187,22 +170,19 @@ function dateprogress7() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 8
 function dateprogress8() {
 	var prog = document.getElementById('itemprogress8');
 	var percent = document.getElementById('indidate8');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 125 && count == 25){
 			clearInterval(id);
 			
 		}
@@ -214,22 +194,19 @@ function dateprogress8() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 9
 function dateprogress9() {
 	var prog = document.getElementById('itemprogress9');
 	var percent = document.getElementById('indidate9');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 100 && count == 20){
 			clearInterval(id);
 			
 		}
@@ -241,22 +218,20 @@ function dateprogress9() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 10
 function dateprogress10() {
 	var prog = document.getElementById('itemprogress10');
 	var percent = document.getElementById('indidate10');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+			if (progress == 100 && count == 20){
+
 			clearInterval(id);
 			
 		}
@@ -268,22 +243,20 @@ function dateprogress10() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 11
 function dateprogress11() {
 	var prog = document.getElementById('itemprogress11');
 	var percent = document.getElementById('indidate11');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+				if (progress == 75 && count == 15){
+
 			clearInterval(id);
 			
 		}
@@ -295,22 +268,19 @@ function dateprogress11() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 12
 function dateprogress12() {
 	var prog = document.getElementById('itemprogress12');
 	var percent = document.getElementById('indidate12');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 75 && count == 15){
 			clearInterval(id);
 			
 		}
@@ -322,22 +292,19 @@ function dateprogress12() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 13
 function dateprogress13() {
 	var prog = document.getElementById('itemprogress13');
 	var percent = document.getElementById('indidate13');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 50 && count == 10){
 			clearInterval(id);
 			
 		}
@@ -349,22 +316,19 @@ function dateprogress13() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 14
 function dateprogress14() {
 	var prog = document.getElementById('itemprogress14');
 	var percent = document.getElementById('indidate14');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 25 && count == 5){
 			clearInterval(id);
 			
 		}
@@ -376,24 +340,21 @@ function dateprogress14() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+		
 	}
 }
 //RESSOURCE 15
 function dateprogress15() {
 	var prog = document.getElementById('itemprogress15');
 	var percent = document.getElementById('indidate15');
-	var count =5;
-	var progress =25;
+	var count =1;
+	var progress =5;
 	var id = setInterval(progframe,30);
 	
 	function progframe() {
-		if (progress == 250 && count == 50){
+		if (progress == 5 && count == 1){
 			clearInterval(id);
-			
+			prog.style.backgroundColor= "#fffffe"; 
 		}
 		else {
 			progress += 5;
@@ -403,10 +364,7 @@ function dateprogress15() {
 			
 		
 		}
-		if (progress == 100 && count == 20){
-			
-			prog.style.color = "#fffffe"; 
-		}
+	
 	}
 }
 dateprogress1();
