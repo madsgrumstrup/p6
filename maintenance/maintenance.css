@@ -2,6 +2,114 @@
 /* CSS Document */
 
 
+/* navigationsbar*/
+
+.overallnav {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.overallnavitems {
+  background-color: #000000;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#headerlogo {
+  width: 150px;
+  height: 20px;
+  float: left;
+  margin-top: 2px;
+}
+
+.overallnav .overallnavitems ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.overallnav .overallnavitems li {
+  float: left;
+  margin-left: 20px;
+}
+
+.overallnav .overallnavitems li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+.overallnav .overallnavitems li a:hover {
+  color: #25b125;
+}
+
+#navbox {
+  float: right;
+}
+
+/* sidenavigationsbar*/
+
+.remain .residenav ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.remain .residenav li {
+  margin-left: 20px;
+}
+
+.remain .residenav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remain .residenav li a:hover {
+  color: #25b125;
+}
+
+.remain .residenav p {
+  font-size: 15px;
+}
+
+.remain .residenav li p {
+  font-size: 12px;
+}
+
+.remain {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "residenav remainbox remainbox""residenav remainbox remainbox";
+  grid-area: remain;
+  border: thick #000000 solid;
+}
+
+.remain .residenav {
+  grid-area: residenav;
+  border: medium #414141 solid;
+  background-color: #000000;
+}
+/* sidenavigationsbar done*/
+
+
+
+
+
+
+
+
 
 .recontainer {
   display: grid;
@@ -26,10 +134,34 @@
 
 
 
-.remain .residenav {
-	
-	grid-area: residenav;
-	border: medium #414141 solid;
+.remain .residenav ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.remain .residenav li {
+  margin-left: 20px;
+}
+
+.remain .residenav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remain .residenav li a:hover {
+  color: #25b125;
+}
+
+.remain .residenav p {
+  font-size: 15px;
+}
+
+.remain .residenav li p {
+  font-size: 12px;
 }
 
 
@@ -128,14 +260,16 @@ color:#000000;
 	height: 100%;
 	margin-top: -20px;
 	text-align: center;
+	
 
 }
 
 .remain .remainbox .remainboxressources .itemprogress h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
+
+	
 }
 
 
@@ -191,8 +325,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress2 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -253,8 +386,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress3 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -315,8 +447,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress4 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -365,7 +496,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress5 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #E4D824;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -376,8 +507,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress5 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -427,7 +557,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress6 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #E4D824;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -438,8 +568,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress6 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+;
 }
 
 
@@ -487,7 +616,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress7 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #E4D824;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -498,8 +627,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress7 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+
 }
 
 
@@ -546,7 +674,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress8 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #E4D824;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -557,8 +685,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress8 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+
 }
 
 
@@ -606,7 +733,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress9 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #E4D824;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -617,8 +744,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress9 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -667,7 +793,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress10 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #E4D824;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -678,8 +804,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress10 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+
 }
 
 
@@ -726,7 +851,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress11 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #35E424;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -737,8 +862,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress11 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -784,7 +908,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress12 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #35E424;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -795,8 +919,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress12 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -841,7 +964,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress13 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #35E424;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -852,8 +975,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress13 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
 
@@ -899,7 +1021,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress14 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #35E424;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
@@ -910,8 +1032,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress14 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+
 }
 
 
@@ -958,7 +1079,7 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress15 {
 	grid-area: reiten1dat;
 color:#000000;
-	background-color: red;
+	background-color: #35E424;
 	width:100%;
 	height: 100%;
 	margin-top: -20px;
