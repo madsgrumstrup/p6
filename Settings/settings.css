@@ -334,14 +334,29 @@
   margin-left: auto;
 }
 
-.save_set {
-  color: #ff0000;
+.set_save_exit1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.set_save_exit{
+  display: flex;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    border: 1px solid transparent;
 
 }
 
-.save_set_buttom {
-  display: inline-block;
-  grid-column: 3;
+.set_save_exit p{
+  color: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
 }
 
 .arrowDown1 {
