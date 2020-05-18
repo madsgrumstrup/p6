@@ -139,6 +139,14 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+.set_item2 p{
+  grid-column: 3;
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
 #fname {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
@@ -151,12 +159,14 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+
 .set_item4 {
   margin-top: 200px;
   grid-column: 5;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
 }
+
 
 /* Første del slutter */
 /* Anden del starter */
@@ -306,7 +316,7 @@
   margin-bottom: 7px;
 }
 
-.notify_to_email{
+.notify_to_email p{
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   justify-content: center;
@@ -354,6 +364,7 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
+  margin-top: 190px;
 }
 
 .set_save_exit{
