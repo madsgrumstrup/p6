@@ -306,11 +306,26 @@
   margin-bottom: 7px;
 }
 
-.set_item15 {
-  margin-top: 100px;
-  grid-column: 4;
-  grid-row: 2;
+.notify_to_email{
   font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.set_item15 {
+  margin-top: 0.01px;
+  grid-column: 1/-1;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 #to_email {
