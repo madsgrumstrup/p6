@@ -155,7 +155,7 @@
   margin-left: auto;
 }
 
-#name_of_resource {
+/* #name_of_resource {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
   width: 200px;
@@ -174,7 +174,7 @@
   font-family: 'Titillium Web', sans-serif;
   width: 200px;
   height: 50px;
-}
+} */
 
 .set_item3 {
   margin-top: 200px;
@@ -189,8 +189,9 @@
   grid-column: 5;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 200px;
 }
-
 
 /* Første del slutter */
 /* Anden del starter */
