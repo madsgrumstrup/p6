@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Nav */
 .overallnav{
   display: grid;
   grid-template-columns: auto;
@@ -51,6 +52,8 @@
   float: right;
 }
 
+/* Nav slut */
+/* Sidebar */
 .remain .residenav ul{
   list-style-type: none;
   padding: 0;
@@ -114,3 +117,5 @@
 .remainboxtop{
 	grid-area: remainboxtop;
 }
+
+/* Sidebar slut */
