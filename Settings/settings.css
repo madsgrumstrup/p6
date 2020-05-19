@@ -112,23 +112,7 @@
 /* Her starter dot-nav */
 
 
-/* nav#dot-nav {
-  position: fixed;
-  right: 20px;
-  top: 20px;
-}
-nav#dot-nav a {
-  border: 1px solid #121212;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  display: block;
-  margin: 10px;
-}
 
-nav#dot-nav a.active, nav#dot-nav a:first-child {
-  background: #121212;
-} */
 
 /* Her slutter dot-nav */
 
@@ -425,6 +409,19 @@ nav#dot-nav a.active, nav#dot-nav a:first-child {
   color: #ffffff;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
+}
+
+.set_arrow1{
+  position: relative;
+  top: -63px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 165%;
+  opacity: .5;
 }
 
 .arrowDown1 {
