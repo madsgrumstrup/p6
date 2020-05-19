@@ -108,6 +108,14 @@
 }
 
 /* Her slutter menu css */
+
+/* Her starter dot-nav */
+
+
+
+
+/* Her slutter dot-nav */
+
 /* Her starter settings css */
 .setcontainer {
   display: grid;
@@ -147,10 +155,26 @@
   margin-left: auto;
 }
 
-#fname {
+/* #name_of_resource {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
 }
+
+#type {
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
+
+#group{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+} */
 
 .set_item3 {
   margin-top: 200px;
@@ -165,8 +189,9 @@
   grid-column: 5;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 200px;
 }
-
 
 /* Første del slutter */
 /* Anden del starter */
@@ -244,6 +269,7 @@
   margin-bottom: 7px;
 }
 
+
 .set_item10 {
   margin-top: 1200px;
   grid-column: 2;
@@ -254,8 +280,8 @@
 #last_service {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 50px;
 }
 
 .set_item11 {
@@ -296,8 +322,8 @@
 #next_service {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
-  width: 250px;
-  height: 200px;
+  width: 200px;
+  height: 50px;
 }
 
 /* Tredje del slutter */
@@ -314,6 +340,7 @@
   font-weight: bold;
   border-bottom: 2px solid #000000;
   margin-bottom: 7px;
+  margin-top: -90px;
 }
 
 .notify_to_email p{
@@ -385,6 +412,19 @@
   font-weight: 600;
 }
 
+.set_arrow1{
+  position: relative;
+  top: -63px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 165%;
+  opacity: .5;
+}
+
 .arrowDown1 {
   margin-top: 300px;
   border: solid black;
@@ -422,6 +462,7 @@
 }
 
 .arrowDown4 {
+  top: -250px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -430,10 +471,11 @@
   -webkit-transform: rotate(225deg);
   margin-left: 50%;
   opacity: .5;
+  position: relative;
 }
 
 .arrowDown5 {
-  margin-bottom: 30px;
+  top: -150px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -442,6 +484,7 @@
   -webkit-transform: rotate(45deg);
   margin-left: 50%;
   opacity: .5;
+  position: relative;
 }
 
 .arrowDown6 {
