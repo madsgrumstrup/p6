@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+
+.overallnav{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.overallnavitems{
+  background-color: #000000;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#headerlogo{
+  width: 150px;
+  height: 20px;
+  float: left;
+  margin-top: 2px;
+}
+
+.overallnav .overallnavitems ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.overallnav .overallnavitems li{
+  float: left;
+  margin-left: 20px;
+}
+
+.overallnav .overallnavitems li a{
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+.overallnav .overallnavitems li a:hover{
+  color: #25b125;
+}
+
+#navbox{
+  float: right;
+}
+
+/* Nav slut */
+
+.recontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2.5fr 1fr 1fr;
+  gap: 0px 1px;
+  grid-template-areas: "remain remain remain remain" "remain remain remain remain" "footer footer footer footer";
+}
+.remain {
+	
+	 display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+	text-align: center;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
+  grid-area: remain;
+	border: thick #000000 solid;
+	
+}
+
+
+/* Sidebar */
+.remain .residenav ul{
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.remain .residenav li{
+  margin-left: 20px;
+}
+
+.remain .residenav li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remain .residenav li a:hover{
+  color: #25b125;
+}
+
+.remain .residenav p{
+  font-size: 20px;
+}
+
+.residenav ul.underkategorinav{
+  margin-left: 0;
+}
+
+.remain .residenav ul li a{
+  font-size: 15px;
+}
+
+
+
+
+.remain .residenav{
+	grid-area: residenav;
+	border: medium #414141 solid;
+  background-color: #000000;
+}
+
+
+
+.remain .remainbox{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
+  grid-area: remainbox;
+border: medium #414141 solid;
+	
+}
+
+.remainboxtop { 
+	grid-area: remainboxtop; }
+
+
+
+
+
+/*searchBAR*/
+
+.remainbox .remainboxtop .researchsbar {
+	float: right;
+	
+	background: #000000;
+	
+	border-radius: 40px;
+	padding: 10px;
+}
+
+
+
+
+.remainbox .remainboxtop .researchsbar .researchbtn {
+	float: right;
+	width: 40px;
+	 color: #25b125;
+	border-radius: 50%;
+	
+	background: #000000;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+.remainbox .remainboxtop .researchsbar .search-txtpl {
+	border: none;
+	background: none;
+	outline: none;
+	 	
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 40px;
+
+}
+
+
+
+
+
+.remain .remainbox .remainboxressources{
+	 grid-area: remainboxressources; 
+	border: thin #BDBDBD solid;
+	align-items:center;
+	text-align: start;
+	
+	  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
+	
+	
+}
+
+
+
+
+.remain .remainbox .remainboxressources .reitem {
+		
+	grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "reitem 1" "reiten1date";
+	color: red;
+	
+	padding-bottom: 20%;
+	padding-left: 30%;
+	border: thick #000000 solid; 
+	height: 50%;
+	
+	
+	
+}
+
+.remain .remainbox .remainboxressources #reitem1date {
+	color: blue;
+}
+
+.remain .remainbox .remainboxressources .reitem h1 {
+	font-size: 1.6em;
+}
+.remain .remainbox .remainboxressources .reitem1nt {
+	 display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reitemname reitemtype";
+}
+
+
+.remain .remainbox .remainboxressources .reitemname  {
+	color:#1F1F1F;
+	grid-area: reitemname;
+	
+	
+}
+.remain .remainbox .remainboxressources .reitemtype {
+	color:blue;
+	
+	grid-area: reitemtype;
+	 background-image: url("../GitHub/p6/Images/MACHINELOGO.png");
+	background-size:100% 100%; 
+	opacity: .4;
+}
+
