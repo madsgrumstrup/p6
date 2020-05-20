@@ -155,6 +155,12 @@
   margin-left: auto;
 }
 
+#name_of_resource{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
 /* #name_of_resource {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
@@ -183,6 +189,18 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
+.set_item3 p{
+  grid-column: 3;
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  }
+
+.set_item3_dropdown{
+  width: 200px;
+  height: 50px;
+}
 
 .set_item4 {
   margin-top: 200px;
@@ -191,6 +209,19 @@
   font-family: 'Titillium Web', sans-serif;
   width: 250px;
   height: 200px;
+}
+
+.set_item4 p{
+  grid-column: 3;
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  }
+
+.set_item4_dropdown{
+  width: 200px;
+  height: 50px;
 }
 
 /* Første del slutter */
