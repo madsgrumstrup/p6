@@ -114,6 +114,7 @@
 
 
 
+
 /* Her slutter dot-nav */
 
 /* Her starter settings css */
@@ -161,26 +162,6 @@
   width: 200px;
   height: 50px;
 }
-/* #name_of_resource {
-  color: #6B6C6B;
-  font-family: 'Titillium Web', sans-serif;
-  width: 200px;
-  height: 50px;
-}
-
-#type {
-  color: #6B6C6B;
-  font-family: 'Titillium Web', sans-serif;
-  width: 200px;
-  height: 50px;
-}
-
-#group{
-  color: #6B6C6B;
-  font-family: 'Titillium Web', sans-serif;
-  width: 200px;
-  height: 50px;
-} */
 
 .set_item3 {
   margin-top: 200px;
@@ -324,6 +305,17 @@
   grid-column: 3;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  top: 450%;
+  position: relative;
+}
+
+.set_item11 p{
+  font-family: 'Titillium Web', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-left: 82%;
 }
 
 #service_interval_number {
@@ -331,6 +323,7 @@
   font-family: 'Titillium Web', sans-serif;
   width: 100px;
   height: 50px;
+  float: right;
 }
 
 .set_item12 {
@@ -338,9 +331,13 @@
   grid-column: 4;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
+  width: 100px;
+  top: 450%;
+  position: relative;
+
 }
 
-#service_interval_style {
+.set_item12_dropdown {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
   width: 100px;
@@ -352,6 +349,7 @@
   grid-column: 5;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
 }
 
 #next_service {
@@ -447,18 +445,7 @@
   font-weight: 600;
 }
 
-.set_arrow1{
-  position: relative;
-  top: -63px;
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 5px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  margin-left: 165%;
-  opacity: .5;
-}
+/* her starter arrowdown ikoner/knapper */
 
 .arrowDown1 {
   margin-top: 300px;
@@ -533,3 +520,5 @@
   margin-left: 50%;
   opacity: .5;
 }
+
+/* her slutter arrow down ikoner/knapper */
