@@ -261,8 +261,8 @@ border: medium #414141 solid;
 .remain .remainbox .remainboxressources #reitem1date {
 	color: red;
 	border: thin #000000 solid; 
-padding-bottom: 30%;
 
+height: 105%;
 	
 }
 
@@ -270,7 +270,7 @@ padding-bottom: 30%;
   .remain .remainbox .remainboxressources #reitem1date {
 	color: blue;
 	border: thin #000000 solid; 
-padding-bottom: 25%;
+height: 95%;
 
 	
 }
@@ -279,7 +279,7 @@ padding-bottom: 25%;
   .remain .remainbox .remainboxressources #reitem1date {
 	color: red;
 	border: thin #000000 solid; 
-padding-bottom: 20%;
+height: 85%;
 
 	
 }
@@ -288,7 +288,7 @@ padding-bottom: 20%;
   .remain .remainbox .remainboxressources #reitem1date {
 	color: blue;
 	border: thin #000000 solid; 
-padding-bottom: 15%;
+height: 75%;
 
 	
 }
