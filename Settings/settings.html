@@ -121,9 +121,14 @@
         <div class="set_item11">
           <p>Service</p><input type="text" id="service_interval_number" value="30" name="fname"><br><br>
         </div>
-        <div class="set_item12">
-          <p>interval:</p><input type="text" id="service_interval_style" value="days" name="fname"><br><br>
-        </div>
+        <form class="set_item12" action="/action_page.php">
+          <p>interval:</p>
+          <select class="set_item12_dropdown" name="option">
+            <option value="" disabled selected></option>
+            <option value="1">Month</option>
+            <option value="2">Days</option>
+          </select>
+        </form>
         <div class="set_item13">
           <p>Next service:</p><input type="text" id="next_service" value="" name="fname"><br><br>
         </div>

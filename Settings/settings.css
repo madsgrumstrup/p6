@@ -338,9 +338,10 @@
   grid-column: 4;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
 }
 
-#service_interval_style {
+.set_item12_dropdown {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
   width: 100px;
@@ -352,6 +353,7 @@
   grid-column: 5;
   grid-row: 2;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
 }
 
 #next_service {
