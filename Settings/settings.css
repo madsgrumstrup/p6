@@ -108,6 +108,14 @@
 }
 
 /* Her slutter menu css */
+
+/* Her starter dot-nav */
+
+
+
+
+/* Her slutter dot-nav */
+
 /* Her starter settings css */
 .setcontainer {
   display: grid;
@@ -147,7 +155,7 @@
   margin-left: auto;
 }
 
-#name_of_resource {
+/* #name_of_resource {
   color: #6B6C6B;
   font-family: 'Titillium Web', sans-serif;
   width: 200px;
@@ -166,7 +174,7 @@
   font-family: 'Titillium Web', sans-serif;
   width: 200px;
   height: 50px;
-}
+} */
 
 .set_item3 {
   margin-top: 200px;
@@ -181,8 +189,9 @@
   grid-column: 5;
   grid-row: 1;
   font-family: 'Titillium Web', sans-serif;
+  width: 250px;
+  height: 200px;
 }
-
 
 /* Første del slutter */
 /* Anden del starter */
@@ -401,6 +410,19 @@
   color: #ffffff;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
+}
+
+.set_arrow1{
+  position: relative;
+  top: -63px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-left: 165%;
+  opacity: .5;
 }
 
 .arrowDown1 {
