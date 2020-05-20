@@ -197,8 +197,8 @@ border: medium #414141 solid;
 	text-align: start;
 	
 	  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat (5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1px 1px;
   grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 	
@@ -215,9 +215,9 @@ border: medium #414141 solid;
   gap: 1px 1px;
   grid-template-areas: "reitem 1" "reiten1date";
 	color: red;
-	
+
 	padding-bottom: 20%;
-	padding-left: 30%;
+	
 	border: thick #000000 solid; 
 	height: 50%;
 	
@@ -225,12 +225,15 @@ border: medium #414141 solid;
 	
 }
 
-.remain .remainbox .remainboxressources #reitem1date {
-	color: blue;
+.remain .remainbox .remainboxressources .reitem:nth-child(1) {
+ /*use nth child til at ændre de iondividuelle*/
 }
 
+
+
 .remain .remainbox .remainboxressources .reitem h1 {
-	font-size: 1.6em;
+	font-size: 1.4em;
+	
 }
 .remain .remainbox .remainboxressources .reitem1nt {
 	 display: grid;
@@ -253,5 +256,42 @@ border: medium #414141 solid;
 	 background-image: url("../GitHub/p6/Images/MACHINELOGO.png");
 	background-size:100% 100%; 
 	opacity: .4;
+}
+
+
+.remain .remainbox .remainboxressources #reitem1date {
+	color: red;
+	border: thin #000000 solid; 
+padding-bottom: 30%;
+
+	
+}
+
+@media only screen and (max-width: 1700px) {
+  .remain .remainbox .remainboxressources #reitem1date {
+	color: blue;
+	border: thin #000000 solid; 
+padding-bottom: 25%;
+
+	
+}
+}
+@media only screen and (max-width: 1450px) {
+  .remain .remainbox .remainboxressources #reitem1date {
+	color: red;
+	border: thin #000000 solid; 
+padding-bottom: 20%;
+
+	
+}
+}
+@media only screen and (max-width: 1250px) {
+  .remain .remainbox .remainboxressources #reitem1date {
+	color: blue;
+	border: thin #000000 solid; 
+padding-bottom: 15%;
+
+	
+}
 }
 
