@@ -129,7 +129,7 @@
 
 .remain .remainbox{
 display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.4fr 0.5fr 1fr;
   grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
   grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
