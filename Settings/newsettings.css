@@ -125,7 +125,7 @@
   grid-template-columns: 5% 1fr 1fr 1fr 1fr;
   grid-template-rows: 27% 1fr 1fr;
   grid-template-areas:
-  "set_item1 set_item1 set_item1 set_item1 set_item1"
+  "dot_nav set_item1 set_item1 set_item1 set_item1"
   "dot_nav first_step first_step first_step first_step"
   "dot_nav second_step second_step second_step second_step"
   "dot_nav third_step third_step third_step third_step"
@@ -363,6 +363,7 @@ grid-area: documents;
 
 .checkbox{
 grid-area: checkbox;
+
 }
 
 #checkbox{
@@ -402,6 +403,11 @@ grid-area: checkbox;
 .third_step{
   grid-area: third_step;
   border: solid pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "arrow_4 arrow_4 arrow_4 arrow_4";
 }
 
 .fourth_step{
