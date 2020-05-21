@@ -123,7 +123,7 @@
 .set_container{
   display: grid;
   grid-template-columns: 5% 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 27% 1fr 1fr;
   grid-template-areas:
   "set_item1 set_item1 set_item1 set_item1 set_item1"
   "dot_nav first_step first_step first_step first_step"
@@ -277,12 +277,12 @@ font-family: 'Titillium Web', sans-serif;
     height: 50px;
   }
 
-.scrool{
+.scrool1{
   grid-area: first_arrow;
   border: solid #000;
 }
 
-.arrowDown1{
+.arrow_down1{
     margin-top: 10%;
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -305,12 +305,98 @@ font-family: 'Titillium Web', sans-serif;
 .second_step{
   grid-area: second_step;
   border: solid #0000ff;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
   "second_arrow second_arrow second_arrow"
-  "name type group"
-  "second_arrow second_arrow second_arrow";
+  "description documents checkbox"
+  "third_arrow third_arrow third_arrow";
+}
+
+.scrool2{
+  grid-area: second_arrow;
+  border: solid #000;
+}
+
+.arrow_down2{
+    margin-top: 2%;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(225deg);
+    margin-left: 50%;
+    opacity: .5;
+    justify-content: center;
+    align-items: center;
+  }
+
+#second_arrow{
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.description{
+grid-area: description;
+}
+
+#description{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
+
+.documents{
+grid-area: documents;
+}
+
+#documents{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
+
+.checkbox{
+grid-area: checkbox;
+}
+
+#checkbox{
+  color: #6B6C6B;
+  font-family: 'Titillium Web', sans-serif;
+  width: 200px;
+  height: 50px;
+}
+
+.scrool3{
+  grid-area: third_arrow;
+  border: solid #000;
+  position: relative;
+}
+
+.arrow_down3{
+  position: absolute;
+  top: 80%;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 50%;
+    opacity: .5;
+    justify-content: center;
+    align-items: center;
+  }
+
+#third_arrow{
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
 }
 
 .third_step{
