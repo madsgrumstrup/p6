@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Nav */
+.overallnav{
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.overallnavitems{
+  background-color: #000000;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#headerlogo{
+  width: 150px;
+  height: 20px;
+  float: left;
+  margin-top: 2px;
+}
+
+.overallnav .overallnavitems ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.overallnav .overallnavitems li{
+  float: left;
+  margin-left: 20px;
+}
+
+.overallnav .overallnavitems li a{
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+.overallnav .overallnavitems li a:hover{
+  color: #25b125;
+}
+
+#navbox{
+  float: right;
+}
+
+/* Nav slut */
+/* Sidebar */
+.remain .residenav ul{
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.remain .residenav li{
+  margin-left: 20px;
+}
+
+.remain .residenav li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remain .residenav li a:hover{
+  color: #25b125;
+}
+
+.remain .residenav p{
+  font-size: 20px;
+}
+
+.residenav ul.underkategorinav{
+  margin-left: 0;
+}
+
+.remain .residenav ul li a{
+  font-size: 15px;
+}
+
+.remain{
+	display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
+  grid-area: remain;
+	border: thick #000000 solid;
+}
+
+.remain .residenav{
+	grid-area: residenav;
+	border: medium #414141 solid;
+  background-color: #000000;
+}
+
+.remain .remainbox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
+  grid-area: remainbox;
+  border: medium #414141 solid;
+}
+
+.remainboxtop{
+	grid-area: remainboxtop;
+}
+
+/* Sidebar slut */
