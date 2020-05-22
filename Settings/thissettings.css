@@ -273,11 +273,13 @@ font-family: 'Titillium Web', sans-serif;
     grid-area: group;
     border: solid #000;
     text-align: center;
+
   }
 
 .group_dropdown{
     width: 200px;
     height: 50px;
+    margin-bottom: 67%;
   }
 
 /* first step slut */
@@ -313,6 +315,7 @@ font-family: 'Titillium Web', sans-serif;
 .second_arrow{
   grid-area: second_arrow;
   border: solid green;
+  margin-bottom: 10%;
 }
 
 .scrool2{
@@ -379,6 +382,7 @@ text-align: center;
   margin-top: 2.5%;
 grid-area: checkbox;
 text-align: center;
+margin-bottom: 53%;
 }
 
 #checkbox{
@@ -426,6 +430,7 @@ text-align: center;
 .scrool4{
   grid-area: fourth_arrow;
   border: solid #000;
+  margin-bottom: 10%;
 }
 
 .arrow_down4{
@@ -449,6 +454,7 @@ text-align: center;
 }
 
 .third_step{
+  margin-bottom: 19%;
   grid-area: third_step;
   border: solid brown;
   display: grid;
@@ -541,7 +547,6 @@ text-align: center;
 }
 
 .arrow_down5{
-  margin-top: 3%;
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -605,6 +610,7 @@ grid-area: mail;
 border: solid red;
 justify-content: center;
 text-align: center;
+margin-top: 30%;
 }
 
 .mail p{
@@ -615,6 +621,7 @@ text-align: center;
   font-family: 'Titillium Web', sans-serif;
   width: 200px;
   height: 50px;
+  margin-bottom: 67%;
 }
 
 .set_save_exit1{
