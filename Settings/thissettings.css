@@ -230,7 +230,7 @@
       }
 /* dot nav slut */
 .first_step{
-  margin-top: 10%;
+  margin-top: 8%;
   grid-area: first_step;
   border: solid pink;
   display: grid;
@@ -245,6 +245,9 @@
   text-align: center;
 }
 
+.ask_name{
+  margin-left: 52%;
+}
 .name p{
   font-family: 'Titillium Web', sans-serif;
 }
@@ -262,6 +265,10 @@ border: solid #000;
 text-align: center;
 }
 
+.ask_type{
+  margin-left: 52%;
+}
+
 .type p{
 font-family: 'Titillium Web', sans-serif;
 }
@@ -275,7 +282,10 @@ font-family: 'Titillium Web', sans-serif;
     grid-area: group;
     border: solid #000;
     text-align: center;
+  }
 
+  .ask_group{
+    margin-left: 52%;
   }
 
 .group_dropdown{
@@ -358,6 +368,11 @@ font-family: 'Titillium Web', sans-serif;
   margin-top: 2.5%;
   grid-area: description;
   text-align: center;
+  border: solid red;
+}
+
+.ask_description{
+  margin-left: 67%;
 }
 
 #description{
@@ -371,6 +386,11 @@ font-family: 'Titillium Web', sans-serif;
   margin-top: 2.5%;
 grid-area: documents;
 text-align: center;
+border: solid red;
+}
+
+.ask_documents{
+  margin-left: 67%;
 }
 
 #documents{
@@ -384,7 +404,12 @@ text-align: center;
   margin-top: 2.5%;
 grid-area: checkbox;
 text-align: center;
-margin-bottom: 53%;
+margin-bottom: 44%;
+border: solid red;
+}
+
+.ask_checkbox{
+  margin-left: 67%;
 }
 
 #checkbox{
@@ -613,6 +638,10 @@ border: solid red;
 justify-content: center;
 text-align: center;
 margin-top: 30%;
+}
+
+.ask_mail{
+  margin-left: 67%;
 }
 
 .mail p{
