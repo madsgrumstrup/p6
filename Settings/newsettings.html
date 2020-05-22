@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +8,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="https://kit.fontawesome.com/1f805a81df.js" crossorigin="anonymous"></script>
   <title>NEWSettings</title>
-  <link rel="stylesheet" href="newsettings.css">
+  <link rel="stylesheet" href="thissettings.css">
 </head>
 <header>
   <div class="overallnav">
@@ -94,15 +93,19 @@
             <option value="3">+Add new group</option>
           </select>
         </form>
+      </div>
+      <div class="first_arrow">
         <div class="scrool1">
           <a href="#" id="first_arrow"></a>
           <i class="arrow_down1"></i>
         </div>
       </div>
-      <div class="second_step">
+      <div class="second_arrow">
         <div class="scrool2">
           <a href="#" id="second_arrow"></a>
           <i class="arrow_down2"></i></div>
+      </div>
+      <div class="second_step">
         <div class="description">
           <p>Description:</p><input type="text" id="description" value="Add a description of the machine.." name="fname"><br><br>
         </div>
@@ -112,25 +115,61 @@
         <div class="checkbox">
           <p>Checkbox:</p><input type="text" id="checkbox" value="" name="fname"><br><br>
         </div>
+      </div>
+      <div class="third_arrow">
         <div class="scrool3">
           <a href="#" id="third_arrow"></a>
           <i class="arrow_down3"></i>
         </div>
       </div>
+      <div class="fourth_arrow">
+        <div class="scrool4">
+          <a href="#" id="fourth_arrow"></a>
+          <i class="arrow_down4"></i>
+        </div>
+      </div>
       <div class="third_step">
-        <p>hej</p>
-        <p>hej</p>
-        <p>hej</p>
+        <div class="set_last_service">
+          <p>Last service:</p><input type="text" id="last_service" value="06-05-2020" name="fname"><br><br>
+        </div>
+        <div class="set_service">
+          <p>Service</p><input type="text" id="service_interval_number" value="30" name="fname"><br><br>
+        </div>
+        <form class="set_interval" action="/action_page.php">
+          <p>interval:</p>
+          <select class="set_interval_dropdown" name="option">
+            <option value="" disabled selected></option>
+            <option value="1">Month</option>
+            <option value="2">Days</option>
+          </select>
+        </form>
+        <div class="set_next_service">
+          <p>Next service:</p><input type="text" id="next_service" value="06-08-2020" name="fname"><br><br>
+        </div>
+      </div>
+      <div class="fif_arrow">
+        <div class="scrool5">
+          <a href="#" id="fif_arrow"></a>
+          <i class="arrow_down5"></i>
+        </div>
+      </div>
+      <div class="six_arrow">
+        <div class="scrool6">
+          <a href="#" id="six_arrow"></a>
+          <i class="arrow_down6"></i>
+        </div>
       </div>
       <div class="fourth_step">
-        <p>hej</p>
-        <p>hej</p>
-        <p>hej</p>
+        <div class="mail">
+          <p>Notify to email</p><input type="text" id="to_email" value="e.g email@live.dk..." name="fname"><br><br>
+        </div>
+        <div class="set_save_exit1">
+          <button type="set_button" class="set_save_exit"><a href="p6/maintenance/maintenanceindex.html">
+              <p>Save and exit</p></button>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-</body>
-<script src="newsettings.js"></script>
-
-</html>
+    </div>
+    </body>
+    <script src="thissettings.js"></script>
+    </html>

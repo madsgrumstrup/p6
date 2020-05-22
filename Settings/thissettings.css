@@ -121,6 +121,8 @@
 /* Sidebar slut */
 .set_container{
   display: grid;
+  position: relative;
+  margin-bottom: -104%;
   grid-template-columns: 5% 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "set_header set_header set_header set_header set_header"
