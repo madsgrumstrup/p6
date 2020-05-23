@@ -4,9 +4,6 @@ $('.dots li').click(function(){
 });
 
 
-
-
-
 // JS til pile smooth scrool
 
 function scroll_to(first_arrow) {
