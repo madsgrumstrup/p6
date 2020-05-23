@@ -122,7 +122,7 @@
 .set_container{
   display: grid;
   position: relative;
-  margin-bottom: -104%;
+  margin-bottom: -105%;
   grid-template-columns: 5% 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "set_header set_header set_header set_header set_header"
@@ -300,6 +300,7 @@ font-family: 'Titillium Web', sans-serif;
   grid-area: first_arrow;
   border: solid blue;
 }
+
 .scrool1{
   grid-area: first_arrow;
   border: solid #000;
@@ -595,6 +596,7 @@ border: solid red;
 .six_arrow{
 grid-area: six_arrow;
 border: solid yellow;
+margin-top: 2%;
 }
 
 .scrool6{
