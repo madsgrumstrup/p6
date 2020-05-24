@@ -274,7 +274,7 @@ border: medium #414141 solid;
 	  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px 1px;
+  gap: 70px 10px;
   grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 	
 	
@@ -1197,7 +1197,8 @@ color:#000000;
 
 /* end ressource page showing*/
 .remainboxbut {
-	
+	margin-top: 1%;
+	margin-bottom: 1%;
 	grid-area: remainboxbut;
 }
 .remainboxbut .prevrepage {
