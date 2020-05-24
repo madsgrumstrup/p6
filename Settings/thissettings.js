@@ -67,6 +67,9 @@ function scroll_to(first_arrow) {
             scroll_to('#7');
             });
 
+
+// pensum lavet her: DOM, JS, Events,Operator, Funktioner
+// Jeg mangler if statements, loops og list i form af arrays
 // JS pile smooth scrool done
 
 // checklist
