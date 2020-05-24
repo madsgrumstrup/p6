@@ -1,8 +1,9 @@
+// dot_nav
 $('.dots li').click(function(){
   $('.active').removeClass('active');
   $(this).addClass('active');
 });
-
+// dot_nav
 
 // JS til pile smooth scrool
 
@@ -67,3 +68,9 @@ function scroll_to(first_arrow) {
             });
 
 // JS pile smooth scrool done
+
+// checklist
+
+
+
+// checklist
