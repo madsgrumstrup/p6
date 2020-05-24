@@ -274,7 +274,7 @@ border: medium #414141 solid;
 	  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 70px 10px;
+  gap: 45px 10px;
   grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 	
 	
@@ -289,7 +289,7 @@ grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
   grid-template-areas: "reitem 1" "reiten1date";
-	color: red;
+	
 	overflow: hidden;
 	padding-bottom: 20%;
 	
@@ -330,7 +330,7 @@ grid-template-columns: 1fr;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate {
@@ -389,7 +389,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate2 {
@@ -451,7 +451,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate3 {
@@ -514,7 +514,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate4 {
@@ -576,7 +576,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate5 {
@@ -638,7 +638,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate6 {
@@ -699,7 +699,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate7 {
@@ -758,7 +758,7 @@ margin-top: 5px;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate8{
@@ -818,7 +818,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate9 {
@@ -879,7 +879,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate10 {
@@ -938,7 +938,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate11 {
@@ -996,7 +996,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate12{
@@ -1053,7 +1053,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate13 {
@@ -1111,7 +1111,7 @@ color:#000000;
 	
 	
 	width:100%;
-	height: 85%;
+height: 100%;
 }
 
 #indidate14 {
@@ -1146,6 +1146,7 @@ color:#000000;
   grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
+	
 }
 
 
@@ -1167,10 +1168,10 @@ color:#000000;
 
 .remain .remainbox .remainboxressources #reitem15date {
 	border: thin #000000 solid; 
-	
+	font-size: 2em;
 	
 	width:100%;
-	height: 85%;
+	height: 100%;
 }
 
 #indidate15 {
