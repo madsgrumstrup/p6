@@ -114,21 +114,22 @@
 .recontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2.5fr 1fr 1fr;
+  grid-template-rows: 2fr 0.3fr;
   gap: 0px 1px;
-  grid-template-areas: "remain remain remain remain" "remain remain remain remain" "footer footer footer footer";
+
+  grid-template-areas: "remain remain remain remain" "remain remain remain remain";
+	
 }
 .remain {
 	
 	 display: grid;
   grid-template-columns: 1fr 4fr 1fr;
 	text-align: center;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
   gap: 1px 1px;
   grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
   grid-area: remain;
-	border: thick #000000 solid;
-	
+	height: 100%;
 }
 
 
@@ -168,6 +169,33 @@
 .remainbox h1 {
 	font-family:"Titillium Web";
 	
+}
+/* Add new resource button */
+.addrebut {
+	margin-top: 65px;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #01cc01 100%);
+	background-color:#89c403;
+	border-radius:32px;
+	border:1px solid #74b807;
+	display:inline;
+	float: left;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #01cc01;
+}
+.addrebut:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#1F7E1F;
+}
+.addrebut:active {
+	position:relative;
+	top:1px;
 }
 
 /*searchBAR*/
@@ -217,29 +245,36 @@
 .remain .remainbox{
 display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.4;
   gap: 1px 1px;
-  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
+  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources" "remainboxbut remainboxbut remainboxbut";
   grid-area: remainbox;
 border: medium #414141 solid;
 	
 }
 
 .remainboxtop { 
-	grid-area: remainboxtop; }
+	grid-area: remainboxtop;
+	padding-bottom: 1%;
+	
+}
+.remainboxtop h1 {
+	margin-bottom: -50px;
+	border-bottom: thin solid #000000;
+}
 /* resourcees*/
 
 .remain .remainbox .remainboxressources{
 	position: relative;
 	 grid-area: remainboxressources; 
-	border: thin #BDBDBD solid;
+
 	align-items:center;
 	text-align: start;
 	
 	  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
+  gap: 10px 1px;
   grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 	
 	
@@ -255,34 +290,37 @@ grid-template-columns: 1fr;
   gap: 1px 1px;
   grid-template-areas: "reitem 1" "reiten1date";
 	color: red;
-	
+	overflow: hidden;
 	padding-bottom: 20%;
 	
-	border: thick #000000 solid; 
-	height: 50%;
+	border: #000000 solid;
+	border-width: medium;
+	height: 100%;
 	width: 90%;
 }
 
 /* resource 1 */
 .remain .remainbox .remainboxressources .reitem1nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
 
 
-.remain .remainbox .remainboxressources .reitemname  {
+.remain .remainbox .remainboxressources .reitemname {
 	color:#1F1F1F;
 	grid-area: reitemname;
 	
-}
-.remain .remainbox .remainboxressources .reitemtype {
-	color:blue;
 	
+}
+.reitemname h1 {
+	font-size: 2em;
+	}
+.remain .remainbox .remainboxressources .reitemtype {
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -316,8 +354,6 @@ color:#000000;
  
 	text-align:justify;
 	
-
-	
 }
 
 
@@ -325,7 +361,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem2nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -336,12 +372,14 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem2name h1 {
+	font-size: 2em;
+	}
+
 .remain .remainbox .remainboxressources .reitem2type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -386,7 +424,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem3nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -397,12 +435,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem3name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem3type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -447,7 +486,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem4nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -458,12 +497,14 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+
+.reitem4name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem4type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -507,7 +548,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem5nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -518,12 +559,14 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+
+.reitem5name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem5type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -568,7 +611,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem6nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -579,12 +622,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem6name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem6type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -627,7 +671,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem7nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -638,12 +682,14 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+
+.reitem7name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem7type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -685,7 +731,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem8nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -696,12 +742,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem8name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem8type {
-	color:blue;
-	
+margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -744,7 +791,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem9nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -755,12 +802,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem9name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem9type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -804,7 +852,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem10nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -815,12 +863,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem10name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem10type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -862,7 +911,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem11nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -873,12 +922,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem11name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem11type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -919,7 +969,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem12nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -930,12 +980,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem12name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem12type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -975,7 +1026,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem13nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -986,12 +1037,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem13name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem13type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -1032,7 +1084,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem14nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -1043,12 +1095,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem14name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem14type {
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -1090,7 +1143,7 @@ color:#000000;
 
 .remain .remainbox .remainboxressources .reitem15nt {
 	  display: grid;
-  grid-template-columns: 1fr 0.4fr;
+  grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
 }
@@ -1101,12 +1154,13 @@ color:#000000;
 	grid-area: reitemname;
 	
 }
+.reitem15name h1 {
+	font-size: 2em;
+	}
 .remain .remainbox .remainboxressources .reitem15type{
-	color:blue;
-	
+	margin-top: 5px;
+	color: #000000;
 	grid-area: reitemtype;
-	 background-image: url("../Images/MACHINELOGO.png");
-	background-size:cover; 
 	opacity: .4;
 }
 
@@ -1138,36 +1192,34 @@ color:#000000;
 .remain .remainbox .remainboxressources .itemprogress15 h2{
  
 	text-align:justify;
-	margin-left: 3.5em;
-	padding-top: 40px;
+	
 }
 
-
-
-
-
-.footer {
-	grid-area: footer;
-	border: thick #000000 solid;
+/* end ressource page showing*/
+.remainboxbut {
+	
+	grid-area: remainboxbut;
 }
-
-.car {
-    font-family     : Arial;
-    text-align      : center;
-    width           : 100px;
-    height          : 15px;
-    background      : #ccc;
-    border          : 1px solid #000;
-    box-shadow      : 1px 1px 5px -1px #000;
-    padding         : 10px;
-    margin-bottom   : 10px;
-    cursor          : pointer;
+.remainboxbut .prevrepage {
+	
+	color:#000000;
 }
-
-.car:hover {
-    text-decoration : underline;   
+.remainboxbut .repageshow {
+	box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none;
+	color:#000000;
+    cursor: pointer;
+	border-radius: 2px;
+	background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+	border: thin solid #000000;
 }
-
-
+.remainboxbut .nextrepage {
+	color:#000000;
+}
 
 
