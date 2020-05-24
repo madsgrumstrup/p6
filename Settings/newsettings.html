@@ -74,13 +74,15 @@
       </div>
       <div class="first_step">
         <div class="name">
-          <div class="ask_name"><p>[?]</p>
+          <div class="ask_name">
+            <p>[?]</p>
             <span class="name_tip">Find på noget smart at sige her</span>
           </div>
           <p>Name of resource:</p><input type="text" id="name_of_resource" value="e.g. Truck crane.." name="fname"><br><br>
         </div>
         <form class="type" action="/action_page.php">
-          <div class="ask_type"><p>[?]</p>
+          <div class="ask_type">
+            <p>[?]</p>
             <span class="type_tip">Find på noget smart at sige her</span>
           </div>
           <p>Type:</p>
@@ -92,7 +94,8 @@
           </select>
         </form>
         <form class="group" action="/action_page.php">
-          <div class="ask_group"><p>[?]</p>
+          <div class="ask_group">
+            <p>[?]</p>
             <span class="group_tip">Find på noget smart at sige her</span>
           </div>
           <p>Group:</p>
@@ -116,7 +119,8 @@
       </div>
       <div class="second_step">
         <div class="description">
-          <div class="ask_description"><p>[?]</p>
+          <div class="ask_description">
+            <p>[?]</p>
             <span class="description_tip">Find på noget smart at sige her</span>
           </div>
           <p>Description:</p><input type="text" id="description" value="Add a description of the machine.." name="fname"><br><br>
@@ -135,8 +139,19 @@
           </div>
           <p>Checklist:</p>
           <input type="text" id="checkbox" placeholder="Title...">
-            <span onclick="newElement()" class="addBtn">Add</span> <br><br>
-        
+          <span onclick="newElement()" class="addBtn">Add</span> <br><br>
+          <div class="set_tasks_overall">
+            <ul id="set_tasks">
+              <li><label>Pay Bills</label>
+                <button class="set_edit">Edit</button>
+                <button class="set_delete">Delete</button></li>
+            </ul>
+          </div>
+
+
+
+
+
 
 
 
@@ -193,7 +208,8 @@
         </div>
         <div class="set_save_exit1">
           <button type="set_button" class="set_save_exit"><a href="p6/maintenance/maintenanceindex.html"></a>
-              <p>Save and exit</p></button>
+            <p>Save and exit</p>
+          </button>
         </div>
       </div>
     </div>
