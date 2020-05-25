@@ -7,7 +7,7 @@ $('.dots li').click(function(){
 
 // JS til pile smooth scrool
 
-function scroll_to(first_arrow) {
+function scroll_to(all_arrows) {
       document.documentElement.style.scrollBehavior = 'smooth';
       element = document.createElement('a');
       element.setAttribute('href', id);
@@ -17,52 +17,27 @@ function scroll_to(first_arrow) {
   scroll_to('#7');
   });
 
-  function scroll_to(second_arrow) {
-        document.documentElement.style.scrollBehavior = 'smooth';
-        element = document.createElement('a');
-        element.setAttribute('href', id);
-        element.click();
-    }
+
     document.getElementById("second_arrow").addEventListener('click', () => {
     scroll_to('#7');
     });
 
-    function scroll_to(third_arrow) {
-          document.documentElement.style.scrollBehavior = 'smooth';
-          element = document.createElement('a');
-          element.setAttribute('href', id);
-          element.click();
-      }
+
       document.getElementById("third_arrow").addEventListener('click', () => {
       scroll_to('#7');
       });
 
-      function scroll_to(fourth_arrow) {
-            document.documentElement.style.scrollBehavior = 'smooth';
-            element = document.createElement('a');
-            element.setAttribute('href', id);
-            element.click();
-        }
+
         document.getElementById("fourth_arrow").addEventListener('click', () => {
         scroll_to('#7');
         });
 
-        function scroll_to(fif_arrow) {
-              document.documentElement.style.scrollBehavior = 'smooth';
-              element = document.createElement('a');
-              element.setAttribute('href', id);
-              element.click();
-          }
+
           document.getElementById("fif_arrow").addEventListener('click', () => {
           scroll_to('#7');
           });
 
-          function scroll_to(six_arrow) {
-                document.documentElement.style.scrollBehavior = 'smooth';
-                element = document.createElement('a');
-                element.setAttribute('href', id);
-                element.click();
-            }
+
             document.getElementById("six_arrow").addEventListener('click', () => {
             scroll_to('#7');
             });
@@ -72,8 +47,22 @@ function scroll_to(first_arrow) {
 // Jeg mangler if statements, loops og list i form af arrays
 // JS pile smooth scrool done
 
-// checklist
+function loopFunktioner(arrayfuncions){
+	var errorSection = false; // Error section peger på det første sted der er fejl på siden. Den er som udgangspunkt ikke sand.
+	var errors = 0; // Antal fejl
+	// Loop alle funktioner, og gem første fejlsektion, hvis der er en.
+	var run = null;
+	for (i = 0; i < arrayfuncions.length; i++) {
+		run = arrayfuncions[i]();
+		if(run != 0 & !errorSection){
+			errorSection = run;
+			errors++;
+		} else if(run != 0){
+			errors++;
+		}
+		run = null;
+	}
+	console.log("Der var " + errors + " fejl.");
 
-
-
-// checklist
+	return([errorSection, errors]);
+}
