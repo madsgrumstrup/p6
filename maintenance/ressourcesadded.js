@@ -1,6 +1,9 @@
 // JavaScript Document
-
-
+var ressourceitems = ['maskine 1', 'maskine 2', 'maskine 3', 'maskine 4', 'maskine 5', 'maskine 6', 'maskine 7', 'maskine 8', 'maskine 9', 'maskine 10',  'maskine 11',  'maskine 12',  'maskine 13',  'maskine 14'];
+var ardates = ['dd'];
+1
+var today = new Date(); 
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 //RESSOURCE 1
 function dateprogress1() {
 	var prog = document.getElementById('itemprogress');
@@ -362,7 +365,6 @@ function dateprogress15() {
 			prog.style.width = progress + 'px';
 			percent.innerHTML = count + '%';
 			
-		
 		}
 	
 	}
@@ -382,5 +384,32 @@ dateprogress12();
 dateprogress13();
 dateprogress14();
 dateprogress15();
+//adds names from array into the h1 places in HTML
+
+ardates.push(date)
+document.getElementById("addrebut").onclick = function() {additemfun()};
+function additemfun(){
+	ressourceitems.push('Maskine 15');
+	document.getElementById("item15name").innerHTML = ressourceitems[14];
+	document.getElementById("reitem15date").innerHTML =ardates[1];
+	
+	
+	console.log (today);
+}
+
+document.getElementById("item1name").innerHTML = ressourceitems[0];
+document.getElementById("item2name").innerHTML = ressourceitems[1];
+document.getElementById("item3name").innerHTML = ressourceitems[2];
+document.getElementById("item4name").innerHTML = ressourceitems[3];
+document.getElementById("item5name").innerHTML = ressourceitems[4];
+document.getElementById("item6name").innerHTML = ressourceitems[5];
+document.getElementById("item7name").innerHTML = ressourceitems[6];
+document.getElementById("item8name").innerHTML = ressourceitems[7];
+document.getElementById("item9name").innerHTML = ressourceitems[8];
+document.getElementById("item10name").innerHTML = ressourceitems[9];
+document.getElementById("item11name").innerHTML = ressourceitems[10];
+document.getElementById("item12name").innerHTML = ressourceitems[11];
+document.getElementById("item13name").innerHTML = ressourceitems[12];
+document.getElementById("item14name").innerHTML = ressourceitems[13];
 
 
