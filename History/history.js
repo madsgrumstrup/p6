@@ -4,6 +4,10 @@ for (let l in listID) {
     newElement.id = listID[l];
     newElement.className = "blabla";
     newElement.innerHTML = listID[l];
-    document.getElementById('remain').appendchild(newElement);
+    document.getElementById('remainbox').appendchild(newElement);
 
 }
+
+
+let remainbox = document.getElementById ("remainbox");
+remainbox.appendChild(newElement);
