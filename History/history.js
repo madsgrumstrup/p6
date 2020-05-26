@@ -7,7 +7,3 @@ for (let l in listID) {
     document.getElementById('remainbox').appendchild(newElement);
 
 }
-
-
-let remainbox = document.getElementById ("remainbox");
-remainbox.appendChild(newElement);
