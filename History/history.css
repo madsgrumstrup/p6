@@ -113,9 +113,9 @@
 .historymain .historybox{
 display: grid;
   grid-template-columns: 0.4fr 0.5fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.05fr;
   gap: 1px 1px;
-  grid-template-areas: "historyboxtop historyboxtop historyboxtop" "historyboxressources historyboxressources historyboxressources";
+  grid-template-areas: "historyboxtop historyboxtop historyboxtop" "historyboxressources historyboxressources historyboxressources" "historyaddnewbox historyaddnewbox historyaddnewbox";
   grid-area: historybox;
   border: medium #414141 solid;
 }
@@ -297,7 +297,10 @@ height: 80%;
 	padding:8px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #01cc01;
-  margin-right: 30px;
+  grid-area: historyaddnewbox;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 30px;
 
 }
 
