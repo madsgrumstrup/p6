@@ -35,7 +35,6 @@
     </div>
   </div>
 </header>
-
 <body>
   <div class="remain">
     <div class="residenav">
@@ -93,7 +92,7 @@
           </div>
           <p>Type:</p>
           <select class="type_dropdown" name="option">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>select type of component</option>
             <option value="1">Preventive</option>
             <option value="2">Predictive</option>
             <option value="3">+Add new type</option>
@@ -106,7 +105,7 @@
           </div>
           <p>Group:</p>
           <select class="group_dropdown" name="option">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>select group for component</option>
             <option value="1">Machine</option>
             <option value="2">Car</option>
             <option value="3">+Add new group</option>
@@ -181,7 +180,7 @@
         <form class="set_interval" action="/action_page.php">
           <p>interval:</p>
           <select class="set_interval_dropdown" name="option">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>every..</option>
             <option value="1">Month</option>
             <option value="2">Days</option>
           </select>
@@ -209,14 +208,13 @@
           <p>Notify to email</p><input type="text" id="to_email" value="e.g email@live.dk..." name="fname"><br><br>
         </div>
         <div class="set_save_exit1">
-          <button onMouseOver="changeColorExit(this, colors[1])" onMouseOut="changeColorExit(this, colors[0])" type="set_button" class="set_save_exit">
-            <p>Save and exit</p>
+          <button onMouseOver="changeColorExit(this, colors[1])" onMouseOut="changeColorExit(this, colors[0])" class="set_save_exit">Save and exit
           </button>
+
         </div>
       </div>
     </div>
+    <script src="thissettings.js"></script>
   </div>
 </body>
-<script src="thissettings.js"></script>
-
 </html>
