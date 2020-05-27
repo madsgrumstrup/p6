@@ -2,7 +2,7 @@ function addExtraBox() { // Deklarer funktionen (opretter den)
   let parent = document.getElementById('parentBox'); // Definerer variablen parent og henter det element som har det id
   let count = parent.childElementCount; // Definerer variablen count og bruger variablen fra tidligere for at finde ud af hvor mange børn den har
   let firstChild = parent.firstElementChild; // definerer variablen firstchild og henter det første barn under parent
-  let date = firstChild.querySelector(".hisitem1date p").innerHTML; // Definerer variablen date og henter det første barn, hvor man indenunder den vil finde id og p
+  let date = firstChild.querySelector("#reitem1date p").innerHTML; // Definerer variablen date og henter det første barn, hvor man indenunder den vil finde id og p
   let oldMonth = parseInt(date.substr(3, 2)) + 1; // Definer variablen oldmonth og trækker først måneden ud for derefter at kunne konventerer streng til et tal og derefter +1
   let oldYear = date.substr(6, 2); // Definer oldyear og og trækker de tal elementer ud man gerne vil arbejde med
   let newMonth; // Definer newmonth for at sikre at de er der til senere
@@ -25,9 +25,9 @@ function addExtraBox() { // Deklarer funktionen (opretter den)
   }
 
   let newDate = '01/' + newMonth + '/' + newYear; // Definer variablen newdate og opretter den nye visnings streng som skal smides ud i kasserne i browseren
-  let html = '<div class="hisitem1nt"><div class="hisitemname"><h1>ID ' + count + '</h1></div><div class="hisitemtype"></div></div><div class="hisitem1date"><i class="fas fa-tools"></i><p>' + newDate + '</p></div>'; // Definer variablen html og opretter den nye kasse, hvor id numre er dynamisk genereret (count) og datoen blier også dynamisk genereret (newdate)
+  let html = '<div class="reitem1nt"><div class="reitemname"><h1>ID ' + count + '</h1></div><div class="reitemtype"></div></div><div id="reitem1date"><i class="fas fa-tools"></i><p>' + newDate + '</p></div>'; // Definer variablen html og opretter den nye kasse, hvor id numre er dynamisk genereret (count) og datoen blier også dynamisk genereret (newdate)
   let box = document.createElement('div'); // definer variablen box som egentlig er parent og opretter et DOM element som er et div element
-  box.className = "hisitem 14" // clas'en på box kommer til at hedde hisitem 14
+  box.className = "reitem 14" // clas'en på box kommer til at hedde reitem 14
   box.innerHTML = html; // Her fortæller den at alt indhold til div kassen skal flyttes ind som er defineret oppe i html variablen (også kaldet child)
 
   parent.prepend(box); //I parent element går den ind og tilføjer den nye box som første child element
@@ -60,7 +60,7 @@ function forklaring() { // Så den ikke kører koden når man kalder den i brows
     console.log(item[0]); // Her spytter den alle overskrifter ud, da der ikke er nogen tæller på
   });
 
-  //Er det samme som onclick="functions navn()" i html (Events)
+  //Er det samme som onclick="functions navn()" i html
   document.getElementById('knap').addEventListener('click' function () {
     addExtraBox();
   });

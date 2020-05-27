@@ -52,18 +52,27 @@
   float: right;
 }
 /* Nav slut */
-.historymain {
+
+.recontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2.5fr 1fr;
+  gap: 0px 1px;
+  grid-template-areas: "remain remain remain remain" "remain remain remain remain";
+}
+
+.remain {
 	display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "sidenav historybox historybox" "sidenav historybox historybox";
-  grid-area: historymain;
+  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
+  grid-area: remain;
 	border: thick #000000 solid;
 }
 
 /* Sidebar */
-.historymain .sidenav ul{
+.remain .residenav ul{
   list-style-type: none;
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
@@ -72,57 +81,57 @@
   margin-left: 20px;
 }
 
-.historymain .sidenav li{
+.remain .residenav li{
   margin-left: 20px;
 }
 
-.historymain .sidenav li a{
+.remain .residenav li a{
   color: #ffffff;
   text-decoration: none;
 }
 
-.historymain .sidenav li a:hover{
+.remain .residenav li a:hover{
   color: #25b125;
 }
 
-.historymain .sidenav p{
+.remain .residenav p{
   font-size: 20px;
 }
 
-.sidenav ul.underkategorinav{
+.residenav ul.underkategorinav{
   margin-left: 0;
 }
 
-.historymain .sidenav ul li a{
+.remain .residenav ul li a{
   font-size: 15px;
 }
 
-.historymain .sidenav{
-	grid-area: sidenav;
+.remain .residenav{
+	grid-area: residenav;
 	border: medium #414141 solid;
   background-color: #000000;
 }
 /* Sidebar slut */
 
-.historymain .historybox{
+.remain .remainbox{
 display: grid;
   grid-template-columns: 0.4fr 0.5fr 1fr;
   grid-template-rows: 0.2fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "historyboxtop historyboxtop historyboxtop" "historyboxreps historyboxreps historyboxreps";
-  grid-area: historybox;
+  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
+  grid-area: remainbox;
 border: medium #414141 solid;
 }
 
-.historyboxtop {
-	grid-area: historyboxtop }
+.remainboxtop {
+	grid-area: remainboxtop; }
 
-.historyboxtop{
+.remainboxtop{
   line-height: 0.7em;
 }
 
 /* searchbar */
-.historybox .historyboxtop .researchsbar {
+.remainbox .remainboxtop .researchsbar {
 	float: right;
 	background: #000000;
 	border-radius: 40px;
@@ -130,7 +139,7 @@ border: medium #414141 solid;
   margin-right: 30px;
 }
 
-.historybox .historyboxtop .researchsbar .researchbtn {
+.remainbox .remainboxtop .researchsbar .researchbtn {
 	float: right;
 	width: 40px;
   color: #25b125;
@@ -141,7 +150,7 @@ border: medium #414141 solid;
 	align-content: center;
 }
 
-.historybox .historyboxtop .researchsbar .search-txtpl {
+.remainbox .remainboxtop .researchsbar .search-txtpl {
 	border: none;
 	background: none;
 	outline: none;
@@ -153,19 +162,19 @@ border: medium #414141 solid;
 }
 /* searchbar slut */
 /* Tilbageknap */
-.historymain .historybox .historyboxtop h1{
+.remain .remainbox .remainboxtop h1{
   text-align: center;
 }
 
-.historymain .historybox .historyboxtop h2{
+.remain .remainbox .remainboxtop h2{
   text-align: center;
 }
 
-.historymain .historybox .historyboxtop p{
+.remain .remainbox .remainboxtop p{
   text-align: center;
 }
 
-.historymain .historybox .historyboxtop .tilbageknap{
+.remain .remainbox .remainboxtop .tilbageknap{
   float: left;
   margin-top: 13px;
   margin-left: 30px;
@@ -173,18 +182,18 @@ border: medium #414141 solid;
   list-style-type: none;
 }
 
-.historymain .historybox .historyboxtop .tilbageknap i{
+.remain .remainbox .remainboxtop .tilbageknap i{
   color: #000000;
 }
 
-.historymain .historybox .historyboxtop .tilbageknap i:hover{
+.remain .remainbox .remainboxtop .tilbageknap i:hover{
   color: #25b125;
 }
 /* Tilbageknap slut */
 
 /* Kasser */
-.historymain .historybox .historyboxreps{
-	grid-area: historyboxreps;
+.remain .remainbox .remainboxressources{
+	grid-area: remainboxressources;
 	align-items: center;
 	text-align: start;
   padding: 2%;
@@ -192,54 +201,54 @@ border: medium #414141 solid;
   grid-template-columns: repeat (5, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 2px 15px;
-  grid-template-areas: "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem";
+  grid-template-areas: "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem" "reitem reitem reitem reitem reitem";
 }
 
-.historymain .historybox .historyboxreps .hisitem {
+.remain .remainbox .remainboxressources .reitem {
 	grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "hisitem 1" "reiten1date";
+  grid-template-areas: "reitem 1" "reiten1date";
 	color: red;
 	padding-bottom: 20%;
 	border: thin #000000 solid;
 	height: 50%;
 }
 
-.historymain .historybox .historyboxreps .hisitem:nth-child(1) {
+.remain .remainbox .remainboxressources .reitem:nth-child(1) {
  /* brug nth child til at ændre de individuelle */
 }
 
-.historymain .historybox .historyboxreps .hisitem h1 {
+.remain .remainbox .remainboxressources .reitem h1 {
 	font-size: 1.4em;
   padding-left: 0.2em;
 }
 
-.historymain .historybox .historyboxreps .hisitem1nt {
+.remain .remainbox .remainboxressources .reitem1nt {
 	 display: grid;
   grid-template-columns: 1fr 0.4fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "hisitemname hisitemtype";
+  grid-template-areas: "reitemname reitemtype";
 }
 
-.historymain .historybox .historyboxreps .hisitemname{
+.remain .remainbox .remainboxressources .reitemname{
 	color: #000000;
-	grid-area: hisitemname;
+	grid-area: reitemname;
 }
 
-.historymain .historybox .historyboxreps .hisitemname h1{
+.remain .remainbox .remainboxressources .reitemname h1{
   font-size: 1.4em;
   padding-left: 80px;
 }
 
-.historymain .historybox .historyboxreps .hisitemtype {
+.remain .remainbox .remainboxressources .reitemtype {
 	color:blue;
-	grid-area: hisitemtype;
+	grid-area: reitemtype;
 	background-size: 100% 100%;
 	opacity: .4;
 }
 
-.historymain .historybox .historyboxreps .hisitem1date {
+.remain .remainbox .remainboxressources #reitem1date {
   height: 100%;
   font-size: 1em;
   font-weight: 800;
@@ -248,57 +257,29 @@ border: medium #414141 solid;
 
 /* Kasser slut */
 /* Kasser responsive */
-.historymain .historybox .historyboxreps .hisitem1date i{
+.remain .remainbox .remainboxressources #reitem1date i{
   transform: scale(7);
   opacity: 0.2;
 }
 
 @media only screen and (max-width: 1700px) {
-  .historymain .historybox .historyboxreps .hisitem1date {
+  .remain .remainbox .remainboxressources #reitem1date {
 	color: blue;
   height: 90%;
 }
 }
 
 @media only screen and (max-width: 1450px) {
-  .historymain .historybox .historyboxreps .hisitem1date {
+  .remain .remainbox .remainboxressources #reitem1date {
 	color: #000000;
 height: 80%;
 }
 }
 
 @media only screen and (max-width: 1250px) {
-  .historymain .historybox .historyboxreps .hisitem1date {
+  .remain .remainbox .remainboxressources #reitem1date {
 	color: yellow;
   height: 70%;
 }
 }
 /* Kasser responsive slut */
-
-/* Add new box knap */
-.historyaddnewbox {
-	box-shadow:inset 0px 1px 0px 0px #a4e271;
-	background:linear-gradient(to bottom, #89c403 5%, #01cc01 100%);
-	background-color:#89c403;
-	border-radius:32px;
-	border:1px solid #74b807;
-	align-items: center;
-  display: inline;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:'Titillium'sans-serif;
-	font-size:15px;
-	font-weight:bold;
-	padding:8px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #01cc01;
-}
-.historyaddnewbox:hover {
-	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
-	background-color:#1F7E1F;
-}
-.historyaddnewbox:active {
-	position:relative;
-	top:1px;
-}
-/* Add new box knap slut */
