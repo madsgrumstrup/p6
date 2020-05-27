@@ -57,6 +57,12 @@
     <div class="set_container">
       <div class="set_item1">
         <p>Settings</p>
+        <div class="set_call_us">
+          <button onclick="myFunction()">
+          <span class="glyphicon glyphicon-earphone"></span> Phone hours
+        </button>
+         <p id="demo"></p>
+        </div>
       </div>
       <div class="dot_nav">
         <div class="dot_menu">
@@ -78,7 +84,7 @@
             <p>[?]</p>
             <span class="name_tip">Find på noget smart at sige her</span>
           </div>
-          <p>Name of resource:</p><input type="text" id="name_of_resource" value="e.g. Truck crane.." name="fname"><br><br>
+          <p id="resource_result">Name of resource:</p><input type="text" id="name_of_resource" value="e.g. Truck crane.." name="fname"><br><br>
         </div>
         <form class="type" action="/action_page.php">
           <div class="ask_type">
@@ -203,7 +209,7 @@
           <p>Notify to email</p><input type="text" id="to_email" value="e.g email@live.dk..." name="fname"><br><br>
         </div>
         <div class="set_save_exit1">
-          <button type="set_button" class="set_save_exit"><a href="p6/maintenance/maintenanceindex.html"></a>
+          <button onMouseOver="changeColorExit(this, colors[1])" onMouseOut="changeColorExit(this, colors[0])" type="set_button" class="set_save_exit">
             <p>Save and exit</p>
           </button>
         </div>

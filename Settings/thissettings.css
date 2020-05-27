@@ -152,6 +152,24 @@
   margin-top: 2%;
 }
 
+.set_call_us{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.set_call_us button{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  border: 1px solid transparent;
+
+}
+
+#demo{
+  border-bottom: none;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 10px;
+}
+
 /* dot nav start */
 .dot_nav {
   grid-area: dot_nav;
@@ -237,7 +255,7 @@
 
 /* dot nav slut */
 .first_step {
-  margin-top: 8%;
+  margin-top: 1%;
   grid-area: first_step;
   border: solid pink;
   display: grid;
@@ -416,6 +434,7 @@
 .first_arrow {
   grid-area: first_arrow;
   border: solid blue;
+  margin-top: 1%;
 }
 
 .scrool1 {
@@ -446,6 +465,7 @@
   grid-area: second_arrow;
   border: solid green;
   margin-bottom: 10%;
+  margin-top: 1%;
 }
 
 .scrool2 {
