@@ -54,7 +54,7 @@
 
 /* Nav slut */
 /* Sidebar */
-.remain .residenav ul {
+.semain .sidenav ul {
   list-style-type: none;
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
@@ -63,59 +63,65 @@
   margin-left: 20px;
 }
 
-.remain .residenav li {
+.semain .sidenav li {
   margin-left: 20px;
 }
 
-.remain .residenav li a {
+.semain .sidenav li a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.remain .residenav li a:hover {
+.semain .sidenav li a:hover {
   color: #25b125;
 }
 
-.remain .residenav p {
+.semain .sidenav p {
   font-size: 20px;
+	  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  margin-left: 20px;
 }
 
-.residenav ul.underkategorinav {
+.sidenav ul.underkategorinav {
   margin-left: 0;
 }
 
-.remain .residenav ul li a {
+.semain .sidenav ul li a {
   font-size: 15px;
 }
 
-.remain {
+.semain {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "residenav remainbox remainbox""residenav remainbox remainbox";
-  grid-area: remain;
+  grid-template-areas: "sidenav semainbox semainbox""sidenav semainbox semainbox";
+  grid-area: semain;
   border: thick #000000 solid;
 }
 
-.remain .residenav {
-  grid-area: residenav;
+.semain .sidenav {
+  grid-area: sidenav;
   border: medium #414141 solid;
   background-color: #000000;
 }
 
-.remain .remainbox {
+.semain .semainbox {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "remainboxtop remainboxtop remainboxtop""remainboxressources remainboxressources remainboxressources";
-  grid-area: remainbox;
+  grid-template-areas: "semainboxtop semainboxtop semainboxtop""semainboxressources semainboxressources semainboxressources";
+  grid-area: semainbox;
   border: medium #414141 solid;
 }
 
-.remainboxtop {
-  grid-area: remainboxtop;
+.semainboxtop {
+  grid-area: semainboxtop;
 }
 
 /* Sidebar slut */
@@ -988,6 +994,7 @@
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
+	
   color: #fff;
   background-color: #5cb85c;
   border-color: #5cb85c;

@@ -3,10 +3,36 @@
   <head>
     <meta charset="utf-8">
 
-
+ <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trendlog.pdf</title>
     <link href="pdf.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	     <script src="https://kit.fontawesome.com/1f805a81df.js" crossorigin="anonymous"></script>
+	   <div class="overallnav">
+      <div class="overallnavitems">
+        <img id="headerlogo" src="../Images/trendloglogo.png" alt="Trendlogs logo til navigationsbaren">
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i></a></li>
+          <li><a href="#">Trendboards</a></li>
+          <li><a href="#">Views</a></li>
+          <li><a href="#">Feeds</a></li>
+          <li><a href="http://madsgrumstrup.com/p6/maintenance/maintenanceindex.html">Maintenance</a></li>
+          <li style="float:right; margin-right: 10px;"><a href="#"><i class="fas fa-user"></i></a></li>
+          <li style="float:right;"><a href="#">User</a></li>
+          <li style="float:right">
+            <select id="navbox" name="pluglog">
+              <option value="pluglog" disabled selected>20 Plug&Log Production Unit</option>
+            </select>
+          </li>
+          <li style="float:right"><a href="#"><i class="fas fa-bell"></i></a></li>
+          <li style="float:right"><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+          <li style="float:right"><a href="#"><i class="fas fa-user-plus"></i></a></li>
+          <li style="float:right"><a href="#"><i class="fas fa-cogs"></i></a></li>
+        </ul>
+      </div>
+    </div>
+	  
+	  
   </head>
 <body>
 
@@ -60,30 +86,27 @@
 </div>
 </div>
 
-    <div class="grid-itempdf itempdf88">
-
-</div>
     <div class="grid-itempdf itempdf9">
     <p>Comment:</p> <input type="text" id="comment" value="Comment here..."name="fname"><br><br>
 </div>
     <div class="grid-itempdf itempdf99"></div>
 
     <div class="grid-itempdf itempdf10">
-<img src="../images/imgkasse.png" alt="kasse til billeder">
-<img src="../images/imgkasse.png" alt="kasse til billeder">
-<img src="../images/imgkasse.png" alt="kasse til billeder">
+<img src="../Images/imgkasse.png" alt="kasse til billeder">
+<img src="../Images/imgkasse.png" alt="kasse til billeder">
+<img src="../Images/imgkasse.png" alt="kasse til billeder">
 </div>
     <div class="grid-itempdf itempdf1010"></div>
 
   <div class="grid-itempdf itempdf11">
   <p>Documents:</p>
-  <img src="../images/addfile.png" alt="add en fil illustration">
-    <img src="../images/addfile.png" alt="add en fil illustration">
-      <img src="../images/addfile.png" alt="add en fil illustration">
+  <img src="../Images/addfile.png" alt="add en fil illustration">
+    <img src="../Images/addfile.png" alt="add en fil illustration">
+      <img src="../Images/addfile.png" alt="add en fil illustration">
 </div>
       <div class="grid-itempdf itempdf1111">
-        <button onclick="changeColor(this, colors[1])">DONE</button>
-
+       <a href="http://madsgrumstrup.com/p6/maintenance/maintenanceindex.html"> <button onclick="changeColor(this, colors[1])">DONE</button>
+</a>
   <script src="pdf.js"></script>
 </body>
 </html>

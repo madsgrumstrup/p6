@@ -21,7 +21,7 @@ function dateprogress1() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
+			prog.style.width = progress - 150 + '%';
 			percent.innerHTML = count + '%';
 			
 		
@@ -46,7 +46,7 @@ function dateprogress2() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
+			prog.style.width = progress - 135 + '%';
 			percent.innerHTML = count + '%';
 			
 		
@@ -71,7 +71,7 @@ function dateprogress3() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
+			prog.style.width = progress - 120 + '%';
 			percent.innerHTML = count + '%';
 			
 		
@@ -95,7 +95,7 @@ function dateprogress4() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
+			prog.style.width = progress - 120 + '%';
 			percent.innerHTML = count + '%';
 			
 		
@@ -120,7 +120,7 @@ function dateprogress5() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
+			prog.style.width = progress  - 110 + '%';
 			percent.innerHTML = count + '%';
 			
 		
@@ -144,8 +144,8 @@ function dateprogress6() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
-			percent.innerHTML = count + '%';
+			prog.style.width = progress - 90 + '%';
+		
 			
 		
 		}
@@ -169,8 +169,8 @@ function dateprogress7() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
-			percent.innerHTML = count + '%';
+			prog.style.width = progress - 65 + '%' ;
+		
 			
 		
 		}
@@ -193,8 +193,8 @@ function dateprogress8() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
-			percent.innerHTML = count + '%';
+			prog.style.width = progress - 40 + 'px';
+			
 			
 		
 		}
@@ -217,8 +217,8 @@ function dateprogress9() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
-			percent.innerHTML = count + '%';
+			prog.style.width = progress -15 + 'px';
+			
 			
 		
 		}
@@ -242,8 +242,8 @@ function dateprogress10() {
 		else {
 			progress += 5;
 			count +=1;
-			prog.style.width = progress + 'px';
-			percent.innerHTML = count + '%';
+			prog.style.width = progress -15 + 'px';
+			
 			
 		
 		}
