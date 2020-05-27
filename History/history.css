@@ -206,7 +206,6 @@ display: grid;
   grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
   grid-template-areas: "hisitem 1" "hisiten1date";
-	color: red;
 	padding-bottom: 20%;
 	border: thin #000000 solid;
 	height: 50%;
@@ -269,7 +268,7 @@ display: grid;
 @media only screen and (max-width: 1450px) {
   .historymain .historybox .historyboxressources .hisitem1date {
 	color: #000000;
-height: 80%;
+  height: 80%;
 }
 }
 
