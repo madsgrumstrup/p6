@@ -52,6 +52,7 @@
   float: right;
 }
 /* Nav slut */
+
 .historymain {
 	display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -87,6 +88,11 @@
 
 .historymain .sidenav p{
   font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  margin-left: 20px;
 }
 
 .sidenav ul.underkategorinav{
@@ -109,13 +115,13 @@ display: grid;
   grid-template-columns: 0.4fr 0.5fr 1fr;
   grid-template-rows: 0.2fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "historyboxtop historyboxtop historyboxtop" "historyboxreps historyboxreps historyboxreps";
+  grid-template-areas: "historyboxtop historyboxtop historyboxtop" "historyboxressources historyboxressources historyboxressources";
   grid-area: historybox;
-border: medium #414141 solid;
+  border: medium #414141 solid;
 }
 
 .historyboxtop {
-	grid-area: historyboxtop }
+	grid-area: historyboxtop; }
 
 .historyboxtop{
   line-height: 0.7em;
@@ -183,8 +189,8 @@ border: medium #414141 solid;
 /* Tilbageknap slut */
 
 /* Kasser */
-.historymain .historybox .historyboxreps{
-	grid-area: historyboxreps;
+.historymain .historybox .historyboxressources{
+	grid-area: historyboxressources;
 	align-items: center;
 	text-align: start;
   padding: 2%;
@@ -194,52 +200,52 @@ border: medium #414141 solid;
   gap: 2px 15px;
   grid-template-areas: "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem";
 }
-
-.historymain .historybox .historyboxreps .hisitem {
+/* TJEK HER!!!!! */
+.historymain .historybox .historyboxressources .hisitem {
 	grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "hisitem 1" "reiten1date";
+  grid-template-areas: "hisitem 1" "hisiten1date";
 	color: red;
 	padding-bottom: 20%;
 	border: thin #000000 solid;
 	height: 50%;
 }
 
-.historymain .historybox .historyboxreps .hisitem:nth-child(1) {
+.historymain .historybox .historyboxressources .hisitem:nth-child(1) {
  /* brug nth child til at ændre de individuelle */
 }
 
-.historymain .historybox .historyboxreps .hisitem h1 {
+.historymain .historybox .historyboxressources .hisitem h1 {
 	font-size: 1.4em;
   padding-left: 0.2em;
 }
 
-.historymain .historybox .historyboxreps .hisitem1nt {
+.historymain .historybox .historyboxressources .hisitem1nt {
 	 display: grid;
   grid-template-columns: 1fr 0.4fr;
   grid-template-rows: 1fr;
   grid-template-areas: "hisitemname hisitemtype";
 }
 
-.historymain .historybox .historyboxreps .hisitemname{
+.historymain .historybox .historyboxressources .hisitemname{
 	color: #000000;
 	grid-area: hisitemname;
 }
 
-.historymain .historybox .historyboxreps .hisitemname h1{
+.historymain .historybox .historyboxressources .hisitemname h1{
   font-size: 1.4em;
   padding-left: 80px;
 }
 
-.historymain .historybox .historyboxreps .hisitemtype {
+.historymain .historybox .historyboxressources .hisitemtype {
 	color:blue;
 	grid-area: hisitemtype;
 	background-size: 100% 100%;
 	opacity: .4;
 }
 
-.historymain .historybox .historyboxreps .hisitem1date {
+.historymain .historybox .historyboxressources .hisitem1date {
   height: 100%;
   font-size: 1em;
   font-weight: 800;
@@ -248,27 +254,27 @@ border: medium #414141 solid;
 
 /* Kasser slut */
 /* Kasser responsive */
-.historymain .historybox .historyboxreps .hisitem1date i{
+.historymain .historybox .historyboxressources .hisitem1date i{
   transform: scale(7);
   opacity: 0.2;
 }
 
 @media only screen and (max-width: 1700px) {
-  .historymain .historybox .historyboxreps .hisitem1date {
+  .historymain .historybox .historyboxressources .hisitem1date {
 	color: blue;
   height: 90%;
 }
 }
 
 @media only screen and (max-width: 1450px) {
-  .historymain .historybox .historyboxreps .hisitem1date {
+  .historymain .historybox .historyboxressources .hisitem1date {
 	color: #000000;
 height: 80%;
 }
 }
 
 @media only screen and (max-width: 1250px) {
-  .historymain .historybox .historyboxreps .hisitem1date {
+  .historymain .historybox .historyboxressources .hisitem1date {
 	color: yellow;
   height: 70%;
 }
@@ -283,20 +289,23 @@ height: 80%;
 	border-radius:32px;
 	border:1px solid #74b807;
 	align-items: center;
-  display: inline;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:'Titillium'sans-serif;
+	font-family:'Titillium Web'sans-serif;
 	font-size:15px;
 	font-weight:bold;
 	padding:8px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #01cc01;
+  margin-right: 30px;
+
 }
+
 .historyaddnewbox:hover {
 	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
 	background-color:#1F7E1F;
 }
+
 .historyaddnewbox:active {
 	position:relative;
 	top:1px;
