@@ -31,8 +31,8 @@
     </div>
   </header>
 <body>
-  <div class="remain">
-    <div class="residenav">
+  <div class="historymain">
+    <div class="sidenav">
       <ul><p>Maintenance</p>
       <li><a href="../maintenance/maintenanceindex.html">Resources</a></li>
       <li><a href="../Settings/settings.html">Settings</a>
@@ -45,8 +45,8 @@
       </ul></li>
       </ul>
     </div>
-    <div class="remainbox">
-      <div class="remainboxtop">
+    <div class="historybox">
+      <div class="historyboxtop">
       <h1>Maintenance</h1>
       <p>History of</p>
       <h2> Maskine 1</h2>
@@ -60,154 +60,192 @@
          </a>
         </div>
       </div>
-      <button onclick="addExtraBox();" type="button">Tilføj ny boks</button>
-      <div class="remainboxressources" id="parentBox">
+      <button class="historyaddnewbox" onclick="addExtraBox()" type="button">Add New Box</button>
+      <div class="historyboxreps" id="parentBox">
         <!-- Her skal knappen komme -->
-        <!-- JS skal gøre så remainboxressources på en eller anden måde kan få nogle "smartere børn" med alt indhold som hvert reitem har -->
+        <!-- JS skal gøre så historyboxreps på en eller anden måde kan få nogle "smartere børn" med alt indhold som hvert hisitem har -->
 
-        <div class="reitem 14">
-          <div class="reitem1nt">
-            <div class="reitemname">
+        <div class="hisitem 14">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
              <h1>ID 14</h1>
            </div>
-           <div class="reitemtype"></div>
+           <div class="hisitemtype"></div>
           </div>
-          <div id="reitem1date">
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/04/20</p>
           </div>
         </div>
 
-        <div class="reitem 13"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 13</h1></div>
-           <div class="reitemtype"></div>
+        <div class="hisitem 13">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 13</h1>
+           </div>
+           <div class="hisitemtype"></div>
           </div>
-          <div id="reitem1date">
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/03/20</p>
-          </div></div>
-
-        <div class="reitem 12"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 12</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 12">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 12</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/02/20</p>
-          </div></div>
-
-        <div class="reitem 11"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 11</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 11">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 11</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/01/20</p>
-          </div></div>
-
-        <div class="reitem 10"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 10</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 10">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 10</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/12/19</p>
-          </div></div>
-
-        <div class="reitem 9"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 9</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 9">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 9</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/11/19</p>
-          </div></div>
-
-        <div class="reitem 8"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 8</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 8">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 8</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/10/19</p>
-          </div></div>
-
-        <div class="reitem 7"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 7</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 7">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 7</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/09/19</p>
-          </div></div>
-
-        <div class="reitem 6"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 6</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 6">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 6</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/08/19</p>
-          </div></div>
-
-        <div class="reitem 5"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 5</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 5">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 5</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/07/19</p>
-          </div></div>
-
-        <div class="reitem 4"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 4</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 4">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 4</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/06/19</p>
-          </div></div>
-
-        <div class="reitem 3"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 3</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 3">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 3</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/05/19</p>
-          </div></div>
-
-        <div class="reitem 2"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 2</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 2">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 2</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/04/19</p>
-          </div></div>
-        <div class="reitem 1"> <div class="reitem1nt">
-            <div class="reitemname">
-             <h1>ID 1</h1></div>
-           <div class="reitemtype"></div>
           </div>
-          <div id="reitem1date">
+        </div>
+
+        <div class="hisitem 1">
+          <div class="hisitem1nt">
+            <div class="hisitemname">
+             <h1>ID 1</h1>
+           </div>
+           <div class="hisitemtype"></div>
+          </div>
+          <div class="hisitem1date">
             <i class="fas fa-tools"></i>
             <p>01/03/19</p>
-          </div></div>
-        <p></p>
-
+          </div>
+        </div>
       </div>
     </div>
   </div>
