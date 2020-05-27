@@ -13,20 +13,25 @@
   <div class="grid-container-pdf">
     <div class="grid-itempdf itempdf1"> <p> Maintenance <br> Cheklist of </p></div>
 
-    <div class="grid-itempdf itempdf2"> </div>
+    <div class="grid-itempdf itempdf2">
+    <img src="../Images/printer.png" alt="Illustreret printer">
+      <button onclick="changeColor(this, colors[1])">PRINT</button>
+</div>
 
     <div class="grid-itempdf itempdf3"><img src="../Images/sortlogo.png" alt="logo i sort"></div>
 
-    <div class="grid-itempdf itempdf33"><p> Maskine 1 </p></div>
+    <div class="grid-itempdf itempdf33">
+      <p id="alertfunction"> Maskine 1 </p>
+    </div>
 
     <div class="grid-itempdf itempdf4"></div>
 
-    <div class="grid-itempdf itempdf5"><p>Notifyed to email:</p> <input type="text" id="fname" value="hejehje"name="fname"><br><br></div>
+    <div class="grid-itempdf itempdf5"><p>Notifyed to email:</p> <input type="text" id="fname" value="email..."name="fname"><br><br></div>
 
-    <div class="grid-itempdf itempdf55"><p>Service date planned:</p> <input type="text" id="fname" value="hejehje"name="fname"><br><br></div>
+    <div class="grid-itempdf itempdf55"><p>Service date planned:</p> <input type="text" id="serviceplanned" value="date..."name="fname"><br><br></div>
 
     <div class="grid-itempdf itempdf6">
-    <p>Description:</p> <input type="text" id="description" value="hejehje"name="fname"><br><br>
+    <p>Description:</p> <input type="text" id="description" value="description..."name="fname"><br><br>
     </div>
 
     <div class="grid-itempdf itempdf66"></div>
@@ -36,26 +41,30 @@
     <div class="grid-itempdf itempdf77"></div>
 
     <div class="grid-itempdf itempdf8">
-
-    <div id="description1">
-      <div id="bar1">50%</div>
-</div>
 <p> Cheklist:</p>
+<div class="baggrund-bar">
+      <div class="progress">
+        <div class="progress-done" data-done="0">
+          100%
+        </div>
+      </div>
 
-<div class="container-btn">
-  <label class="switch">
-    <input type="checkbox" checked>
-    <span class="slider"></span>
-  </label>
+      <div id="container-btn">
+        <label id="switch">
+          <input type="checkbox" notchecked>
+          <span class="slider"></span>
+        </label>
+      </div>
 
 
 </div>
 </div>
 
-    <div class="grid-itempdf itempdf88"></div>
+    <div class="grid-itempdf itempdf88">
 
+</div>
     <div class="grid-itempdf itempdf9">
-    <p>Comment:</p> <input type="text" id="comment" value="hejehje"name="fname"><br><br>
+    <p>Comment:</p> <input type="text" id="comment" value="Comment here..."name="fname"><br><br>
 </div>
     <div class="grid-itempdf itempdf99"></div>
 
@@ -73,15 +82,8 @@
       <img src="../images/addfile.png" alt="add en fil illustration">
 </div>
       <div class="grid-itempdf itempdf1111">
-      <button class="buttondone">DONE</button></div>
-    <script>
-                $(document).on('onclick', '.container-button', function () {
-                    $(this).addClass('active').siblings().removeClass('active')
-                })
+        <button onclick="changeColor(this, colors[1])">DONE</button>
 
-            </script>
-  </div>
-
-
+  <script src="pdf.js"></script>
 </body>
 </html>
