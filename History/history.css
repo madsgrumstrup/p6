@@ -200,7 +200,7 @@ display: grid;
   gap: 2px 15px;
   grid-template-areas: "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem";
 }
-/* TJEK HER!!!!! */
+
 .historymain .historybox .historyboxressources .hisitem {
 	grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
@@ -232,6 +232,7 @@ display: grid;
 	grid-area: hisitemname;
 }
 
+/* Denne gøres til @media only i stor skærm */
 .historymain .historybox .historyboxressources .hisitemname h1{
   font-size: 1.4em;
   padding-left: 80px;
