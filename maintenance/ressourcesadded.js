@@ -1,7 +1,6 @@
 // JavaScript Document
 var ressourceitems = ['maskine 1', 'maskine 2', 'maskine 3', 'maskine 4', 'maskine 5', 'maskine 6', 'maskine 7', 'maskine 8', 'maskine 9', 'maskine 10',  'maskine 11',  'maskine 12',  'maskine 13',  'maskine 14'];
-var ardates = ['dd'];
-1
+var ardates = ['No date'];
 var today = new Date(); 
 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 //RESSOURCE 1
@@ -396,6 +395,7 @@ function additemfun(){
 	
 	console.log (today);
 }
+
 
 document.getElementById("item1name").innerHTML = ressourceitems[0];
 document.getElementById("item2name").innerHTML = ressourceitems[1];
