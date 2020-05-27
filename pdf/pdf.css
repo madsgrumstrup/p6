@@ -30,6 +30,16 @@
     background-color: lightgrey;
 }
 
+.itempdf2 img{
+  height: 50px;
+  float:right;
+}
+
+.itempdf2 button{
+  float:right;
+  margin-top: 60px;
+  margin-right: -52px;
+}
 
 .itempdf3 {
   grid-column: 2;
@@ -50,12 +60,12 @@ margin-bottom: 15px;
   display: block;
 }
 
-.itempdf33 p{
+#alertfunction{
   font-family: 'Titillium Web', sans-serif;
    font-weight: bold;
    float: left;
    margin-top: -20px;
-   margin-left: -165px;
+   margin-left: -330px;
    color: #25b125;
 }
 
@@ -82,13 +92,20 @@ margin-bottom: 15px;
   grid-column: 3 ;
    grid-row: 4;
    margin-top: -50px;
+   position: relative;
+   margin-top: -55px;
+
 
 }
 
 .itempdf55 p{
-  display: flex;
+  display: inline-flex;
   font-size: 20px;
-  align-content: flex-end;
+  margin-top: -50px;
+}
+
+#serviceplanned{
+display: flex;
 }
 
 .itempdf6 {
@@ -120,9 +137,6 @@ margin-bottom: 15px;
 
 }
 
-/*skill baren */
-
-
 
 .itempdf77{
   grid-column: 3;
@@ -133,42 +147,58 @@ margin-bottom: 15px;
 .itempdf8{
   grid-column: 2/3;
   grid-row: 7;
-
+margin-bottom: -800px;
+display: block;
 }
 
 .itempdf8 p{
   font-size: 20px;
 }
 
-#description1{
-  text-align: center;
-  background-color: white;
-  display: block;
-  height: 30%;
-  border: 2px solid black;
-  border-radius: 3px;
-  overflow:hidden;
-  width: 100%;
+/*skill baren */
+.baggrund-bar {
+	font-family: 'Montserrat', sans-serif;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin-top: 30px;
 }
- #bar1{
-   width: 50%;
-   height: 30%;
-   background-color: #4caf50;
-   text-align: center;
-   line-height: 30px;
-   color: #fff;
- }
 
-.container-btn{
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
+
+.progress-done {
+	background: #4caf50;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+#container-btn{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
-  margin-left: 10em;
-  margin-top: -30px;
+  margin-left: 500px;
+  margin-top: -25px;
+
+
+
 }
 
-.switch{
+#switch{
   position: relative;
   display:inline-block;
   width: 80px;
@@ -188,7 +218,7 @@ margin-bottom: 15px;
   border-radius: 34px;
 }
 
-.switch input {display:none}
+#switch input {display:none}
 
 .slider:before{
 position: absolute;
@@ -212,7 +242,6 @@ input:checked + .slider:before
   transform: translateX(50px);
 }
 
-
 .itempdf88{
   grid-column: 3;
   grid-row: 7;
@@ -222,12 +251,12 @@ input:checked + .slider:before
   grid-column: 2;
   grid-row: 8;
 
-
 }
 
 #comment{
   height: 40px;
   width: 350px;
+  margin-top: -300px;
 }
 
 .itempdf9 p{
@@ -279,7 +308,7 @@ border-top: 2px solid grey;
 }
 
 .itempdf1111 button{
-  background-color: #4caf50;
+  background-color: grey;
  border: none;
  color: white;
  padding: 20px;
