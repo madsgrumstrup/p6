@@ -27,5 +27,10 @@ function changeColor(element, color){
   element.style.backgroundColor = color;
 }
 
+
 alert(document.getElementById('alertfunction').innerHTML);
 console.log(progress);
+
+ for (i = 0; i < 16; i++){
+   console.log(i);
+ }
