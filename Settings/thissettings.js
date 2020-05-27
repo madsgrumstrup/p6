@@ -16,31 +16,24 @@ function scroll_to(all_arrows) {
   document.getElementById("first_arrow").addEventListener('click', () => {
   scroll_to('#7');
   });
-
-
-    document.getElementById("second_arrow").addEventListener('click', () => {
+  document.getElementById("second_arrow").addEventListener('click', () => {
+    scroll_to('#7');
+    });
+  document.getElementById("third_arrow").addEventListener('click', () => {
     scroll_to('#7');
     });
 
+  document.getElementById("fourth_arrow").addEventListener('click', () => {
+    scroll_to('#7');
+    });
 
-      document.getElementById("third_arrow").addEventListener('click', () => {
-      scroll_to('#7');
-      });
+  document.getElementById("fif_arrow").addEventListener('click', () => {
+    scroll_to('#7');
+    });
 
-
-        document.getElementById("fourth_arrow").addEventListener('click', () => {
-        scroll_to('#7');
-        });
-
-
-          document.getElementById("fif_arrow").addEventListener('click', () => {
-          scroll_to('#7');
-          });
-
-
-            document.getElementById("six_arrow").addEventListener('click', () => {
-            scroll_to('#7');
-            });
+   document.getElementById("six_arrow").addEventListener('click', () => {
+    scroll_to('#7');
+    });
 
 
 // pensum lavet her: DOM, JS, Events,Operator, Funktioner
