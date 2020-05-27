@@ -51,10 +51,20 @@
 #navbox{
   float: right;
 }
-
 /* Nav slut */
+
+.historymain {
+	display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "sidenav historybox historybox" "sidenav historybox historybox";
+  grid-area: historymain;
+	border: thick #000000 solid;
+}
+
 /* Sidebar */
-.remain .residenav ul{
+.historymain .sidenav ul{
   list-style-type: none;
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
@@ -63,59 +73,244 @@
   margin-left: 20px;
 }
 
-.remain .residenav li{
+.historymain .sidenav li{
   margin-left: 20px;
 }
 
-.remain .residenav li a{
+.historymain .sidenav li a{
   color: #ffffff;
   text-decoration: none;
 }
 
-.remain .residenav li a:hover{
+.historymain .sidenav li a:hover{
   color: #25b125;
 }
 
-.remain .residenav p{
+.historymain .sidenav p{
   font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  margin-left: 20px;
 }
 
-.residenav ul.underkategorinav{
+.sidenav ul.underkategorinav{
   margin-left: 0;
 }
 
-.remain .residenav ul li a{
+.historymain .sidenav ul li a{
   font-size: 15px;
 }
 
-.remain{
-	display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
-  grid-area: remain;
-	border: thick #000000 solid;
-}
-
-.remain .residenav{
-	grid-area: residenav;
+.historymain .sidenav{
+	grid-area: sidenav;
 	border: medium #414141 solid;
   background-color: #000000;
 }
+/* Sidebar slut */
 
-.remain .remainbox{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
+.historymain .historybox{
+display: grid;
+  grid-template-columns: 0.4fr 0.5fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.05fr;
   gap: 1px 1px;
-  grid-template-areas: "remainboxtop remainboxtop remainboxtop" "remainboxressources remainboxressources remainboxressources";
-  grid-area: remainbox;
+  grid-template-areas: "historyboxtop historyboxtop historyboxtop" "historyboxressources historyboxressources historyboxressources" "historyaddnewbox historyaddnewbox historyaddnewbox";
+  grid-area: historybox;
   border: medium #414141 solid;
 }
 
-.remainboxtop{
-	grid-area: remainboxtop;
+.historyboxtop {
+	grid-area: historyboxtop; }
+
+.historyboxtop{
+  line-height: 0.7em;
 }
 
-/* Sidebar slut */
+/* searchbar */
+.historybox .historyboxtop .researchsbar {
+	float: right;
+	background: #000000;
+	border-radius: 40px;
+	padding: 10px;
+  margin-right: 30px;
+}
+
+.historybox .historyboxtop .researchsbar .researchbtn {
+	float: right;
+	width: 40px;
+  color: #25b125;
+	border-radius: 50%;
+	background: #000000;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.historybox .historyboxtop .researchsbar .search-txtpl {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 16px;
+	transition: 40px;
+}
+/* searchbar slut */
+/* Tilbageknap */
+.historymain .historybox .historyboxtop h1{
+  text-align: center;
+}
+
+.historymain .historybox .historyboxtop h2{
+  text-align: center;
+}
+
+.historymain .historybox .historyboxtop p{
+  text-align: center;
+}
+
+.historymain .historybox .historyboxtop .tilbageknap{
+  float: left;
+  margin-top: 13px;
+  margin-left: 30px;
+  transform: scale(2);
+  list-style-type: none;
+}
+
+.historymain .historybox .historyboxtop .tilbageknap i{
+  color: #000000;
+}
+
+.historymain .historybox .historyboxtop .tilbageknap i:hover{
+  color: #25b125;
+}
+/* Tilbageknap slut */
+
+/* Kasser */
+.historymain .historybox .historyboxressources{
+	grid-area: historyboxressources;
+	align-items: center;
+	text-align: start;
+  padding: 2%;
+	display: grid;
+  grid-template-columns: repeat (5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px 15px;
+  grid-template-areas: "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem" "hisitem hisitem hisitem hisitem hisitem";
+}
+
+.historymain .historybox .historyboxressources .hisitem {
+	grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "hisitem 1" "hisiten1date";
+	padding-bottom: 20%;
+	border: thin #000000 solid;
+	height: 50%;
+}
+
+.historymain .historybox .historyboxressources .hisitem:nth-child(1) {
+ /* brug nth child til at ændre de individuelle */
+}
+
+.historymain .historybox .historyboxressources .hisitem h1 {
+	font-size: 1.4em;
+  padding-left: 0.2em;
+}
+
+.historymain .historybox .historyboxressources .hisitem1nt {
+	 display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "hisitemname hisitemtype";
+}
+
+.historymain .historybox .historyboxressources .hisitemname{
+	color: #000000;
+	grid-area: hisitemname;
+}
+
+/* Denne gøres til @media only i stor skærm */
+.historymain .historybox .historyboxressources .hisitemname h1{
+  font-size: 1.4em;
+  padding-left: 80px;
+}
+
+.historymain .historybox .historyboxressources .hisitemtype {
+	color:blue;
+	grid-area: hisitemtype;
+	background-size: 100% 100%;
+	opacity: .4;
+}
+
+.historymain .historybox .historyboxressources .hisitem1date {
+  height: 100%;
+  font-size: 1em;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Kasser slut */
+/* Kasser responsive */
+.historymain .historybox .historyboxressources .hisitem1date i{
+  transform: scale(7);
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 1700px) {
+  .historymain .historybox .historyboxressources .hisitem1date {
+	color: blue;
+  height: 90%;
+}
+}
+
+@media only screen and (max-width: 1450px) {
+  .historymain .historybox .historyboxressources .hisitem1date {
+	color: #000000;
+  height: 80%;
+}
+}
+
+@media only screen and (max-width: 1250px) {
+  .historymain .historybox .historyboxressources .hisitem1date {
+	color: yellow;
+  height: 70%;
+}
+}
+/* Kasser responsive slut */
+
+/* Add new box knap */
+.historyaddnewbox {
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #01cc01 100%);
+	background-color:#89c403;
+	border-radius:32px;
+	border:1px solid #74b807;
+	align-items: center;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Titillium Web'sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #01cc01;
+  grid-area: historyaddnewbox;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 30px;
+
+}
+
+.historyaddnewbox:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#1F7E1F;
+}
+
+.historyaddnewbox:active {
+	position:relative;
+	top:1px;
+}
+/* Add new box knap slut */

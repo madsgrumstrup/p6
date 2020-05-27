@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/1f805a81df.js" crossorigin="anonymous"></script>
+  <title>NEWSettings</title>
+  <link rel="stylesheet" href="thissettings.css">
+</head>
+<header>
+  <div class="overallnav" id="overallnav_to_set">
+    <div class="overallnavitems">
+      <img id="headerlogo" src="../Images/trendloglogo.png" alt="Trendlogs logo til navigationsbaren">
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i></a></li>
+        <li><a href="#">Trendboards</a></li>
+        <li><a href="#">Views</a></li>
+        <li><a href="#">Feeds</a></li>
+        <li><a href="maintenance.html">Maintenance</a></li>
+        <li style="float:right; margin-right: 10px;"><a href="#"><i class="fas fa-user"></i></a></li>
+        <li style="float:right;"><a href="#">User</a></li>
+        <li style="float:right"><a href="#"><select id="navbox" name="pluglog">
+              <option value="pluglog" disabled selected>20 Plug&Log Production Unit</option>
+            </select>
+          </a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-bell"></i></a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-eye-slash"></i></a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-user-plus"></i></a></li>
+        <li style="float:right"><a href="#"><i class="fas fa-cogs"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="remain">
+    <div class="residenav">
+      <ul>
+        <p>Maintenance</p>
+        <li><a href="../maintenance/maintenanceindex.html">Resources</a></li>
+        <li><a href="../Settings/settings.html">Settings</a>
+          <ul class="underkategorinav">
+            <li>Maskine 1????</li>
+          </ul>
+        </li>
+        <li><a href="../History/history.html">History</a>
+          <ul class="underkategorinav">
+            <li>Maskine 1????</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="set_container">
+      <div class="set_item1">
+        <p>Settings</p>
+        <div class="set_call_us">
+          <button onclick="myFunction()">
+          <span class="glyphicon glyphicon-earphone"></span> Phone hours
+        </button>
+         <p id="demo"></p>
+        </div>
+      </div>
+      <div class="dot_nav">
+        <div class="dot_menu">
+          <div class="dot_menu_cell">
+            <ul class="dots">
+              <li><a href="#"></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="first_step">
+        <div class="name">
+          <div class="ask_name">
+            <p>[?]</p>
+            <span class="name_tip">Set the name of the component</span>
+          </div>
+          <p id="resource_result">Name of resource:</p><input type="text" id="name_of_resource" value="e.g. Truck crane.." name="fname"><br><br>
+        </div>
+        <form class="type" action="/action_page.php">
+          <div class="ask_type">
+            <p>[?]</p>
+            <span class="type_tip">What type is the component</span>
+          </div>
+          <p>Type:</p>
+          <select class="type_dropdown" name="option">
+            <option value="" disabled selected></option>
+            <option value="1">Preventive</option>
+            <option value="2">Predictive</option>
+            <option value="3">+Add new type</option>
+          </select>
+        </form>
+        <form class="group" action="/action_page.php">
+          <div class="ask_group">
+            <p>[?]</p>
+            <span class="group_tip">Add the component to a group</span>
+          </div>
+          <p>Group:</p>
+          <select class="group_dropdown" name="option">
+            <option value="" disabled selected></option>
+            <option value="1">Machine</option>
+            <option value="2">Car</option>
+            <option value="3">+Add new group</option>
+          </select>
+        </form>
+      </div>
+      <div class="first_arrow">
+        <div class="scrool1">
+          <a href="#second_arrow" id="first_arrow"><i class="arrow_down1"></i></a>
+        </div>
+      </div>
+      <div class="second_arrow">
+        <div class="scrool2">
+          <a href="#overallnav_to_set" id="second_arrow"><i class="arrow_down2"></i></a>
+        </div>
+      </div>
+      <div class="second_step">
+        <div class="description">
+          <div class="ask_description">
+            <p>[?]</p>
+            <span class="description_tip">Write a description of the component</span>
+          </div>
+          <p>Description:</p><input type="text" id="description" value="Add a description of the machine.." name="fname"><br><br>
+        </div>
+        <div class="documents">
+          <div class="ask_documents">
+            <p>[?]</p>
+            <span class="documents_tip">Here you can add necessary documents belonging to the component</span>
+          </div>
+          <p>Documents:</p><input type="text" id="documents" value="" name="fname"><br><br>
+        </div>
+        <div class="checkbox">
+          <div class="ask_checkbox">
+            <p>[?]</p>
+            <span class="checkbox_tip">Here you can make a checklist belonging to the component if necesseary</span>
+          </div>
+          <p>Checklist:</p>
+          <input type="text" id="checkbox" placeholder="Title...">
+          <span onclick="newElement()" class="addBtn">Add</span> <br><br>
+          <div class="set_tasks_overall">
+            <ul id="set_tasks">
+              <li><label>wheels</label>
+                <button class="set_edit">Edit</button>
+                <button class="set_delete">Delete</button></li>
+              <li><label>add GPS</label>
+                <button class="set_edit">Edit</button>
+                <button class="set_delete">Delete</button></li>
+                <li><label>gearbox</label>
+                  <button class="set_edit">Edit</button>
+                  <button class="set_delete">Delete</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="third_arrow">
+        <div class="scrool3">
+          <a href="#fourth_arrow" id="third_arrow"><i class="arrow_down3"></i></a>
+        </div>
+      </div>
+      <div class="fourth_arrow">
+        <div class="scrool4">
+          <a href="#second_arrow" id="fourth_arrow"><i class="arrow_down4"></i></a>
+        </div>
+      </div>
+      <div class="third_step">
+        <div class="set_last_service">
+          <p>Last service:</p><input type="text" id="last_service" value="06-05-2020" name="fname"><br><br>
+        </div>
+        <div class="set_service">
+          <p>Service</p><input type="text" id="service_interval_number" value="3" name="fname"><br><br>
+        </div>
+        <form class="set_interval" action="/action_page.php">
+          <p>interval:</p>
+          <select class="set_interval_dropdown" name="option">
+            <option value="" disabled selected></option>
+            <option value="1">Month</option>
+            <option value="2">Days</option>
+          </select>
+        </form>
+        <div class="set_next_service">
+          <p>Next service:</p><input type="text" id="next_service" value="06-08-2020" name="fname"><br><br>
+        </div>
+      </div>
+      <div class="fif_arrow">
+        <div class="scrool5">
+          <a href="#six_arrow" id="fif_arrow"><i class="arrow_down5"></i></a>
+        </div>
+      </div>
+      <div class="six_arrow">
+        <div class="scrool6">
+          <a href="#fourth_arrow" id="six_arrow"><i class="arrow_down6"></i></a>
+        </div>
+      </div>
+      <div class="fourth_step">
+        <div class="mail">
+          <div class="ask_mail">
+            <p>[?]</p>
+            <span class="mail_tip">Add which email you would like to send all of the above information to</span>
+          </div>
+          <p>Notify to email</p><input type="text" id="to_email" value="e.g email@live.dk..." name="fname"><br><br>
+        </div>
+        <div class="set_save_exit1">
+          <button onMouseOver="changeColorExit(this, colors[1])" onMouseOut="changeColorExit(this, colors[0])" type="set_button" class="set_save_exit">
+            <p>Save and exit</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="thissettings.js"></script>
+
+</html>
