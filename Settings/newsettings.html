@@ -20,7 +20,7 @@
         <li><a href="#">Trendboards</a></li>
         <li><a href="#">Views</a></li>
         <li><a href="#">Feeds</a></li>
-        <li><a href="maintenance.html">Maintenance</a></li>
+        <li><a href="http://madsgrumstrup.com/p6/maintenance/maintenanceindex.html">Maintenance</a></li>
         <li style="float:right; margin-right: 10px;"><a href="#"><i class="fas fa-user"></i></a></li>
         <li style="float:right;"><a href="#">User</a></li>
         <li style="float:right"><a href="#"><select id="navbox" name="pluglog">
@@ -35,21 +35,21 @@
     </div>
   </div>
 </header>
-
 <body>
-  <div class="remain">
-    <div class="residenav">
+  <div class="semain">
+    <div class="sidenav">
+		 <p>Maintenance</p>
       <ul>
-        <p>Maintenance</p>
-        <li><a href="../maintenance/maintenanceindex.html">Resources</a></li>
-        <li><a href="../Settings/settings.html">Settings</a>
+       
+        <li><a href="http://madsgrumstrup.com/p6/maintenance/maintenanceindex.html">Resources</a></li>
+        <li><a href="http://madsgrumstrup.com/p6/Settings/newsettings.html">Settings</a>
           <ul class="underkategorinav">
-            <li>Maskine 1????</li>
+            <li>Maskine 1</li>
           </ul>
         </li>
-        <li><a href="../History/history.html">History</a>
+        <li><a href="http://madsgrumstrup.com/p6/History/history.html">History</a>
           <ul class="underkategorinav">
-            <li>Maskine 1????</li>
+            <li>Maskine 1</li>
           </ul>
         </li>
       </ul>
@@ -93,7 +93,7 @@
           </div>
           <p>Type:</p>
           <select class="type_dropdown" name="option">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>select type of component</option>
             <option value="1">Preventive</option>
             <option value="2">Predictive</option>
             <option value="3">+Add new type</option>
@@ -106,7 +106,7 @@
           </div>
           <p>Group:</p>
           <select class="group_dropdown" name="option">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>select group for component</option>
             <option value="1">Machine</option>
             <option value="2">Car</option>
             <option value="3">+Add new group</option>
@@ -181,7 +181,7 @@
         <form class="set_interval" action="/action_page.php">
           <p>interval:</p>
           <select class="set_interval_dropdown" name="option">
-            <option value="" disabled selected></option>
+            <option value="" disabled selected>every..</option>
             <option value="1">Month</option>
             <option value="2">Days</option>
           </select>
@@ -209,14 +209,13 @@
           <p>Notify to email</p><input type="text" id="to_email" value="e.g email@live.dk..." name="fname"><br><br>
         </div>
         <div class="set_save_exit1">
-          <button onMouseOver="changeColorExit(this, colors[1])" onMouseOut="changeColorExit(this, colors[0])" type="set_button" class="set_save_exit">
-            <p>Save and exit</p>
-          </button>
+      <a href="http://madsgrumstrup.com/p6/maintenance/maintenanceindex.html"  >  <button onMouseOver="changeColorExit(this, colors[1])" onMouseOut="changeColorExit(this, colors[0])" class="set_save_exit">Save and exit
+			</button> </a>
+
         </div>
       </div>
     </div>
+    <script src="thissettings.js"></script>
   </div>
 </body>
-<script src="thissettings.js"></script>
-
 </html>
