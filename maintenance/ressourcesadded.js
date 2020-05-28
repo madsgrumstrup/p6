@@ -1,5 +1,5 @@
 // JavaScript Document
-let ressourceitems = ['maskine 1', 'maskine 2', 'maskine 3', 'maskine 4', 'maskine 5', 'maskine 6', 'maskine 7', 'maskine 8', 'maskine 9', 'maskine 10',  'maskine 11',  'maskine 12',  'maskine 13',  'maskine 14'];
+let ressourceitems = ['maskine 1', 'maskine 2', 'maskfdfdine 3', 'maskine 4', 'maskine 5', 'maskine 6', 'maskine 7', 'maskine 8', 'maskine 9', 'maskine 10',  'maskine 11',  'maskine 12',  'maskine 13',  'maskine 14'];
 let ardates = ['No date'];
 let RIArrayLength = ressourceitems.length;
 let today = new Date(); 
