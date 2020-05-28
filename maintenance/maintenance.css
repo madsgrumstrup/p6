@@ -56,51 +56,64 @@
 
 /* sidenavigationsbar*/
 
-.remain .residenav ul {
-  list-style-type: none;
-  margin: 20px;
-  padding: 0;
-  font-family: 'Titillium Web', sans-serif;
-  color: #ffffff;
-  font-size: 12px;
-}
 
-.remain .residenav li {
-  margin-left: 20px;
-}
-
-.remain .residenav li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.remain .residenav li a:hover {
-  color: #25b125;
-}
-
-.remain .residenav p {
-  font-size: 15px;
-}
-
-.remain .residenav li p {
-  font-size: 12px;
-}
 
 .remain {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1px 1px;
-  grid-template-areas: "residenav remainbox remainbox""residenav remainbox remainbox";
+  grid-template-areas: "sidenav remainbox remainbox""sidenav remainbox remainbox";
   grid-area: remain;
   border: thick #000000 solid;
 }
 
-.remain .residenav {
-  grid-area: residenav;
-  border: medium #414141 solid;
+
+.remain .sidenav ul{
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.remain .sidenav li{
+  margin-left: 20px;
+}
+
+.remain .sidenav li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remain .sidenav li a:hover{
+  color: #25b125;
+}
+
+.remain .sidenav p{
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.sidenav ul.underkategorinav{
+  margin-left: 0;
+}
+
+.remain .sidenav ul li a{
+  font-size: 15px;
+}
+
+.remain .sidenav{
+	grid-area: sidenav;
+	border: medium #414141 solid;
   background-color: #000000;
 }
+
 /* sidenavigationsbar done*/
 
 
@@ -120,50 +133,7 @@
   grid-template-areas: "remain remain remain remain" "remain remain remain remain";
 	
 }
-.remain {
-	
-	 display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-	text-align: center;
-  grid-template-rows: 1fr 1fr ;
-  gap: 1px 1px;
-  grid-template-areas: "residenav remainbox remainbox" "residenav remainbox remainbox";
-  grid-area: remain;
-	height: 100%;
-}
 
-
-
-
-.remain .residenav ul {
-  list-style-type: none;
-  margin: 20px;
-  padding: 0;
-  font-family: 'Titillium Web', sans-serif;
-  color: #ffffff;
-  font-size: 12px;
-}
-
-.remain .residenav li {
-  margin-left: 20px;
-}
-
-.remain .residenav li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.remain .residenav li a:hover {
-  color: #25b125;
-}
-
-.remain .residenav p {
-  font-size: 15px;
-}
-
-.remain .residenav li p {
-  font-size: 12px;
-}
 
 
 .remainbox h1 {
@@ -292,7 +262,7 @@ grid-template-columns: 1fr;
 	
 	overflow: hidden;
 	padding-bottom: 20%;
-	
+	text-decoration: none;
 	border: #000000 solid;
 	border-width: medium;
 	height: 150px;
@@ -305,6 +275,7 @@ grid-template-columns: 1fr;
   grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "reitemname reitemtype";
+	
 }
 
 
@@ -1201,16 +1172,19 @@ color:#000000;
 	margin-top: 1%;
 	margin-bottom: 1%;
 	grid-area: remainboxbut;
+	margin-right: 30px;
 }
 .remainboxbut .prevrepage {
-	
+	float: right;
 	color:#000000;
+		line-height: 35px;
 }
 .remainboxbut .repageshow {
 	box-sizing: border-box;
     display: inline-block;
     min-width: 1.5em;
     padding: 0.5em 1em;
+	float: right;
     margin-left: 2px;
     text-align: center;
     text-decoration: none;
@@ -1222,6 +1196,8 @@ color:#000000;
 }
 .remainboxbut .nextrepage {
 	color:#000000;
+	float: right;
+	line-height: 35px;
 }
 
 
