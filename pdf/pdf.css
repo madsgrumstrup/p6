@@ -1,4 +1,11 @@
-
+@font-face {
+	src:url("../font/TitilliumWeb-Regular.ttf");
+	src:ur
+		url("../font/TitilliumWeb-Black.ttf");
+	src:url("../font/TitilliumWeb-SemiBold.ttf");
+	
+	font-family:"Titillium Web SemiBold";
+}
 
 /* Nav */
 .overallnav{

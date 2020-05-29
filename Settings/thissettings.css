@@ -1,5 +1,12 @@
 @charset "utf-8";
-
+@font-face {
+	src:url("../font/TitilliumWeb-Regular.ttf");
+	src:ur
+		url("../font/TitilliumWeb-Black.ttf");
+	src:url("../font/TitilliumWeb-SemiBold.ttf");
+	
+	font-family:"Titillium Web SemiBold";
+}
 /* CSS Document */
 /* Nav */
 .overallnav {
